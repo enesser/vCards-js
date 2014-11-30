@@ -109,22 +109,23 @@ function vCard() {
 
         getMajorVersion: function() {
             var majorVersionString = this.version ? this.version.split('.')[0] : '4';
-
             if (!isNaN(majorVersionString)) {
                 return parseInt(majorVersionString);
             }
-
             return 4;
         },
 
-        getFormattedString: function(format) {
-
-            if (!format) {
-                format = 'vCard';
-            }
-
+        getFormattedString: function() {
             var vCardFormatter = require('./lib/vCardFormatter');
             return vCardFormatter.getFormattedString(this);
+        },
+
+        saveToFile: function(filename) {
+            var vCardFormatter = require('./lib/vCardFormatter');
+            var contents = vCardFormatter.getFormattedString(this);
+
+            var fs = require('fs');
+            fs.writeFileSync(filename, contents, { encoding: 'utf8' });
         }
     }
 }

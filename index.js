@@ -1,27 +1,49 @@
+/********************************************************************************
+    VCardsJS 0.10, Eric J Nesser, November 2014
+********************************************************************************/
+
 'use strict';
 
+/**
+ * Represents a contact that can be imported into Outlook, iOS, Mac OS, Android devices, and more
+ */
 var vCard = (function () {
 
+    /**
+     * Get photo object for storing photos in vCards
+     */
     function getPhoto() {
         return {
             url: '',
             mediaType: '',
 
+            /**
+             * Attach a photo from a URL
+             * @param  {string} url       URL where photo can be found
+             * @param  {string} mediaType Media type of photo (JPEG, PNG, GIF)
+             */
             attachFromUrl: function(url, mediaType) {
                 this.url = url;
                 this.mediaType = mediaType;
             },
 
+            /**
+             * Embed a photo from a file using base-64 encoding (not implemented yet)
+             * @param  {string} filename
+             */
             embedFromFile: function(filename) {
                 throw 'Not implemented yet.';
             }
         }
     }
 
+    /**
+     * Get a mailing address to attach to a vCard.
+     */
     function getMailingAddress() {
         return {
             /**
-             * Represents the actual text that should be put on the mailing label when delivering a physical package to the person/object associated with the vCard
+             * Represents the actual text that should be put on the mailing label when delivering a physical package
              * @type {String}
              */
             label: '',
@@ -58,12 +80,39 @@ var vCard = (function () {
         }
     }
 
-    //function create() {
+    /********************************************************************************
+     * Public interface for vCard
+     ********************************************************************************/
     return {
+
+        /**
+         * Date of birth
+         * @type {Datetime}
+         */
         birthday: '',
+
+        /**
+         * Cell phone number
+         * @type {String}
+         */
         cellPhone: '',
+
+        /**
+         * The address for electronic mail communication
+         * @type {String}
+         */
         email: '',
+
+        /**
+         * First name
+         * @type {String}
+         */
         firstName: '',
+
+        /**
+         * Formatted name string associated with the vCard object (will automatically populate if not set)
+         * @type {String}
+         */
         formattedName: '',
 
         /**
@@ -71,17 +120,77 @@ var vCard = (function () {
          * @type {String} Must be M or F for Male or Female
          */
         gender: '',
+
+        /**
+         * Home mailing address
+         * @type {object}
+         */
         homeAddress: getMailingAddress(),
+
+        /**
+         * Home phone
+         * @type {String}
+         */
         homePhone: '',
+
+        /**
+         * Last name
+         * @type {String}
+         */
         lastName: '',
+
+        /**
+         * Logo
+         * @type {object}
+         */
         logo: getPhoto(),
+
+        /**
+         * Middle name
+         * @type {String}
+         */
         middleName: '',
+
+        /**
+         * Prefix for individual's name
+         * @type {String}
+         */
         namePrefix: '',
+
+        /**
+         * Suffix for individual's name
+         * @type {String}
+         */
         nameSuffix: '',
+
+        /**
+         * Nickname of individual
+         * @type {String}
+         */
         nickname: '',
+
+        /**
+         * Specifies supplemental information or a comment that is associated with the vCard
+         * @type {String}
+         */
         note: '',
+
+        /**
+         * The name and optionally the unit(s) of the organization associated with the vCard object
+         * @type {String}
+         */
         organization: '',
+
+        /**
+         * Individual's photo
+         * @type {object}
+         */
         photo: getPhoto(),
+
+        /**
+         * The role, occupation, or business category of the vCard object within an organization
+         * @type {String}
+         */
         role: '',
 
         /**
@@ -90,9 +199,28 @@ var vCard = (function () {
          */
         source: '',
 
+        /**
+         * Specifies the job title, functional position or function of the individual within an organization
+         * @type {String}
+         */
         title: '',
+
+        /**
+         * URL pointing to a website that represents the person in some way
+         * @type {String}
+         */
         url: '',
+
+        /**
+         * Work mailing address
+         * @type {object}
+         */
         workAddress: getMailingAddress(),
+
+        /**
+         * Work phone
+         * @type {String}
+         */
         workPhone: '',
 
         /**
@@ -102,11 +230,9 @@ var vCard = (function () {
         version: '4.0',
 
         /**
-         * Get rendered string
-         * @param  {String} format
-         * @return {String}        Rendered results
+         * Get major version of the vCard format
+         * @return {integer}
          */
-
         getMajorVersion: function() {
             var majorVersionString = this.version ? this.version.split('.')[0] : '4';
             if (!isNaN(majorVersionString)) {
@@ -115,11 +241,19 @@ var vCard = (function () {
             return 4;
         },
 
+        /**
+         * Get formatted vCard
+         * @return {String} Formatted vCard in VCF format
+         */
         getFormattedString: function() {
             var vCardFormatter = require('./lib/vCardFormatter');
             return vCardFormatter.getFormattedString(this);
         },
 
+        /**
+         * Save formatted vCard to file
+         * @param  {String} filename
+         */
         saveToFile: function(filename) {
             var vCardFormatter = require('./lib/vCardFormatter');
             var contents = vCardFormatter.getFormattedString(this);

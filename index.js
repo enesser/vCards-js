@@ -1,6 +1,6 @@
 'use strict';
 
-function vCard() {
+var vCard = (function () {
 
     function getPhoto() {
         return {
@@ -128,4 +128,6 @@ function vCard() {
             fs.writeFileSync(filename, contents, { encoding: 'utf8' });
         }
     }
-}
+});
+
+module.exports = vCard;

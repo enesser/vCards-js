@@ -1,0 +1,35 @@
+LINE: [BEGIN:VCARD]
+LINE: [VERSION:4.0]
+LINE: [FN:John D Doe]
+LINE: [N:Doe;John;D;MR;JR]
+LINE: [NICKNAME:Test User]
+LINE: [GENDER:M]
+LINE: [BDAY:20141130]
+LINE: [ANNIVERSARY:20141130]
+LINE: [EMAIL:john.doe@testmail]
+LINE: [PHOTO;MEDIATYPE=image/png:https://testurl]
+LINE: [TEL;TYPE=CELL:312-555-1414]
+LINE: [TEL;TYPE=HOME,VOICE:312-555-1313]
+LINE: [TEL;TYPE=WORK,VOICE:312-555-1212]
+LINE: [ADR;TYPE=HOME;LABEL=Home Address:;;123 Main Street;Chicago;IL;12345;United States of America]
+LINE: [ADR;TYPE=WORK;LABEL=Work Address:;;123 Corporate Loop\nSuite 500;Los Angeles;CA;54321;California Republic]
+LINE: [TITLE:Crash Test Dummy]
+LINE: [ROLE:Crash Testing]
+LINE: [ORG:ACME Corporation]
+LINE: [URL:http://johndoe]
+LINE: [NOTE:John Doe's \nnotes]
+LINE: [SOURCE:http://sourceurl]
+LINE: [REV:2014-11-30T13:41:51-06:00]
+LINE: [END:VCARD]
+LINE: []
+
+[0m[0m
+[0m  vCardJS[0m
+[0m    .getFormattedString[0m
+    [32m  √[0m[90m should start with a BEGIN:VCARD [0m
+
+    [31m  1) should end with an END:VCARD[0m
+
+
+[92m [0m[32m 1 passing[0m[90m (4ms)[0m
+

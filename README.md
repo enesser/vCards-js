@@ -1,7 +1,7 @@
 vCards JS
 =====
 
-[![Build Status](https://travis-ci.org/enesser/vCards-JS.svg?branch=master)](https://travis-ci.org/enesser/vCards-JS.svg?branch=master)
+[![Build Status](https://travis-ci.org/enesser/vCards-js.svg?branch=master)](https://travis-ci.org/enesser/vCards-js.svg?branch=master)
 [![Dependency Status](https://david-dm.org/enesser/vCards-JS.svg?style=flat)](https://david-dm.org/enesser/vCards-JS.svg?style=flat)
 [![devDependency Status](https://david-dm.org/enesser/vCards-JS/dev-status.svg?style=flat)](https://david-dm.org/enesser/vCards-JS/dev-status.svg?style=flat)
 
@@ -49,7 +49,7 @@ console.log(vCard.getFormattedString());
 
 ### On the Web
 
-You can use vCards JS on your website. Below is an example of how to get it working using Express 4.
+You can use vCards JS on your website. Below is an example of how to get it working on Express 4.
 
 ```js
 
@@ -152,7 +152,7 @@ console.log(vCard.getFormattedString());
 vCards JS currently has partial support for 2.1, and broad support for 3.0 and 4.0. I will be adding full support for 2.1 soon.
 
 vCards JS was built to specifications. This means there are some issues with MS Outlook. Outlook may not support all the fields that
-the library supports. I will be adding more Outlook-specific support in the near future.
+the library supports as it has its own proprietary extensions. I will be adding more Outlook-specific support in the near future.
 
 If there's anything you need that's missing, please let me know and I will make that my priority.
 

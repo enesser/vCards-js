@@ -31,7 +31,7 @@ var vCard = (function () {
              * Embed a photo from a file using base-64 encoding (not implemented yet)
              * @param  {string} filename
              */
-            embedFromFile: function(filename) {
+            embedFromFile: function() {
                 throw 'Not implemented yet.';
             }
         }

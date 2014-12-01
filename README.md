@@ -7,6 +7,8 @@ vCards JS
 
 Create vCards to import contacts into Outlook, iOS, Mac OS, and Android devices from your website or application.
 
+![Screenshot](https://cloud.githubusercontent.com/assets/5659221/5240131/f99c1f3e-78c1-11e4-83b1-4f6e70eecf65.png)
+
 ## Install
 
 ```sh
@@ -47,7 +49,7 @@ console.log(vCard.getFormattedString());
 
 ### On the Web
 
-You can use vCards JS on your website. Below is an example of how to get it working with Express 4.
+You can use vCards JS on your website. Below is an example of how to get it working using Express 4.
 
 ```js
 

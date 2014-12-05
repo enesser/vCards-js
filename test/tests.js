@@ -1,7 +1,9 @@
+'use strict';
+
 var testCard = require('../index');
 var assert = require('assert');
 
-describe('vCardJS', function() {
+describe('vCard', function() {
 
     testCard = testCard();
     testCard.lastName = 'Doe';

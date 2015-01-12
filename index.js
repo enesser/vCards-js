@@ -1,13 +1,16 @@
 /********************************************************************************
     VCardsJS 0.10, Eric J Nesser, November 2014
 ********************************************************************************/
-
+/*jslint node: true */
 'use strict';
 
 /**
  * Represents a contact that can be imported into Outlook, iOS, Mac OS, Android devices, and more
  */
 var vCard = (function () {
+
+  var fs   = require('fs');
+  var path = require('path');
 
     /**
      * Get photo object for storing photos in vCards
@@ -16,6 +19,7 @@ var vCard = (function () {
         return {
             url: '',
             mediaType: '',
+            base64: false,
 
             /**
              * Attach a photo from a URL
@@ -25,16 +29,20 @@ var vCard = (function () {
             attachFromUrl: function(url, mediaType) {
                 this.url = url;
                 this.mediaType = mediaType;
+                this.base64 = false;
             },
 
             /**
              * Embed a photo from a file using base-64 encoding (not implemented yet)
              * @param  {string} filename
              */
-            embedFromFile: function() {
-                throw 'Not implemented yet.';
+            embedFromFile: function(fileLocation) {
+              this.mediaType = path.extname(fileLocation).toUpperCase().replace(/\./g, "");
+              var imgData = fs.readFileSync(fileLocation);
+              this.url = imgData.toString('base64');
+              this.base64 = true;
             }
-        }
+        };
     }
 
     /**
@@ -77,7 +85,7 @@ var vCard = (function () {
              * @type {String}
              */
             countryRegion: ''
-        }
+        };
     }
 
     /********************************************************************************
@@ -261,7 +269,7 @@ var vCard = (function () {
             var fs = require('fs');
             fs.writeFileSync(filename, contents, { encoding: 'utf8' });
         }
-    }
+    };
 });
 
 module.exports = vCard;

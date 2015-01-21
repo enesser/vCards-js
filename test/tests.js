@@ -37,10 +37,17 @@ describe('vCard', function() {
     testCard.workAddress.city = 'Los Angeles';
     testCard.workAddress.stateProvince = 'CA';
     testCard.workAddress.postalCode = '54321';
-    testCard.workAddress.countryRegion = 'California Republic';
+    testCard.workAddress.countryRegion = 'California Republic';    
 
     testCard.source = 'http://sourceurl';
     testCard.note = 'John Doe\'s \nnotes;,';
+
+    testCard.socialUrls['facebook'] = 'https://facebook/johndoe';
+    testCard.socialUrls['linkedIn'] = 'https://linkedin/johndoe';
+    testCard.socialUrls['twitter'] = 'https://twitter/johndoe';
+    testCard.socialUrls['flickr'] = 'https://flickr/johndoe';
+    testCard.socialUrls['custom'] = 'https://custom/johndoe';
+
     var vCardString = testCard.getFormattedString();
     var lines = vCardString.split(/[\n\r]+/);
 

@@ -88,6 +88,19 @@ var vCard = (function () {
         };
     }
 
+    /**
+     * Get social media URLs
+     * @return {object} Social media URL hash group
+     */
+    function getSocialUrls() {
+        return {
+            'facebook': '',
+            'linkedIn': '',
+            'twitter': '',
+            'flickr': ''
+        };
+    }
+
     /********************************************************************************
      * Public interface for vCard
      ********************************************************************************/
@@ -200,6 +213,12 @@ var vCard = (function () {
          * @type {String}
          */
         role: '',
+
+        /**
+         * Social URLs attached to the vCard object (ex: Facebook, Twitter, LinkedIn)
+         * @type {String}
+         */
+        socialUrls: getSocialUrls(),
 
         /**
          * A URL that can be used to get the latest version of this vCard

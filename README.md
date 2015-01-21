@@ -120,7 +120,7 @@ vCard.cellPhone = '312-555-1414';
 //set logo of organization or personal logo
 vCard.logo.attachFromUrl('https://avatars2.githubusercontent.com/u/5659221?v=3&s=460', 'JPEG');
 
-//set url where the vCard can be found
+//set URL where the vCard can be found
 vCard.source = 'http://mywebpage/myvcard.vcf';
 
 //set address information
@@ -137,6 +137,17 @@ vCard.workAddress.city = 'Los Angeles';
 vCard.workAddress.stateProvince = 'CA';
 vCard.workAddress.postalCode = '54321';
 vCard.workAddress.countryRegion = 'United States of America';
+
+//set social media URLs
+vCard.socialUrls['facebook'] = 'https://...';
+vCard.socialUrls['linkedIn'] = 'https://...';
+vCard.socialUrls['twitter'] = 'https://...';
+vCard.socialUrls['flickr'] = 'https://...';
+vCard.socialUrls['custom'] = 'https://...';
+
+//you can also embed photos from files instead of attaching via URL
+vCard.photo.embedFromFile('photo.jpg');
+vCard.logo.embedFromFile('logo.jpg');
 
 vCard.version = '4.0'; //can also support 2.1 and 3.0, certain versions only support certain fields
 

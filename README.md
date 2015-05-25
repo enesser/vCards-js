@@ -83,6 +83,16 @@ router.get('/', function (req, res, next) {
 
 ```
 
+### Embedding Images
+
+You can embed images in the photo or logo field instead of linking to them from a URL using base64 encoding.
+
+```js
+//can be Windows or Linux/Unix path structures, and JPEG, PNG, GIF formats
+vCard.photo.embedFromFile('/path/to/file.png');
+vCard.logo.embedFromFile('/path/to/file.png');
+```
+
 ### Complete Example
 
 The following shows a vCard with everything filled out.
@@ -98,7 +108,13 @@ vCard.firstName = 'Eric';
 vCard.middleName = 'J';
 vCard.lastName = 'Nesser';
 vCard.organization = 'ACME Corporation';
+
+//link to image
 vCard.photo.attachFromUrl('https://avatars2.githubusercontent.com/u/5659221?v=3&s=460', 'JPEG');
+
+//or embed image
+vCard.photo.attachFromUrl('/path/to/file.jpeg');
+
 vCard.workPhone = '312-555-1212';
 vCard.birthday = new Date('01-01-1985');
 vCard.title = 'Software Developer';
@@ -117,7 +133,7 @@ vCard.role = 'Software Development';
 vCard.homePhone = '312-555-1313';
 vCard.cellPhone = '312-555-1414';
 
-//set logo of organization or personal logo
+//set logo of organization or personal logo (also supports embedding, see above)
 vCard.logo.attachFromUrl('https://avatars2.githubusercontent.com/u/5659221?v=3&s=460', 'JPEG');
 
 //set URL where the vCard can be found

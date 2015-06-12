@@ -15,6 +15,7 @@ describe('vCard', function() {
     testCard.gender = 'M';
     testCard.organization = 'ACME Corporation';
     testCard.photo.attachFromUrl('https://testurl', 'png');
+    testCard.logo.attachFromUrl('https://testurl', 'png');
     testCard.workPhone = '312-555-1212';
     testCard.homePhone = '312-555-1313';
     testCard.cellPhone = '312-555-1414';

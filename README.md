@@ -175,20 +175,11 @@ vCard.saveToFile('./eric-nesser.vcf');
 console.log(vCard.getFormattedString());
 ```
 
-### Known Issues
-
-vCards JS currently has partial support for 2.1, and broad support for 3.0 and 4.0. I will be adding full support for 2.1 soon.
-
-vCards JS was built to specifications. This means there are some issues with MS Outlook. Outlook may not support all the fields that
-the library supports as it has its own proprietary extensions. I will be adding more Outlook-specific support in the near future.
-
-If there's anything you need that's missing, please let me know and I will make that my priority.
-
 ### Contributions
 
 Contributions are always welcome!
 
-Thanks to [mplno](https://github.com/mplno), [lop-cz](https://github.com/lop-cz)
+Thanks to [mplno](https://github.com/mplno), [lop-cz](https://github.com/lop-cz).
 
 ### License
 Copyright (c) 2014 Eric J Nesser MIT

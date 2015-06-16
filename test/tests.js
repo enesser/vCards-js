@@ -1,11 +1,14 @@
 'use strict';
 
+/* global require, describe, it: true */
+
 var testCard = require('../index');
 var assert = require('assert');
 
 describe('vCard', function() {
 
     testCard = testCard();
+    testCard.version = '3.0';
     testCard.lastName = 'Doe';
     testCard.middleName = 'D';
     testCard.firstName = 'John';
@@ -25,6 +28,7 @@ describe('vCard', function() {
     testCard.role = 'Crash Testing';
     testCard.email = 'john.doe@testmail';
     testCard.url = 'http://johndoe';
+    testCard.workUrl = 'http://acemecompany/johndoe';
 
     testCard.homeAddress.label = 'Home Address';
     testCard.homeAddress.street = '123 Main Street';
@@ -43,11 +47,11 @@ describe('vCard', function() {
     testCard.source = 'http://sourceurl';
     testCard.note = 'John Doe\'s \nnotes;,';
 
-    testCard.socialUrls['facebook'] = 'https://facebook/johndoe';
-    testCard.socialUrls['linkedIn'] = 'https://linkedin/johndoe';
-    testCard.socialUrls['twitter'] = 'https://twitter/johndoe';
-    testCard.socialUrls['flickr'] = 'https://flickr/johndoe';
-    testCard.socialUrls['custom'] = 'https://custom/johndoe';
+    testCard.socialUrls.facebook = 'https://facebook/johndoe';
+    testCard.socialUrls.linkedIn = 'https://linkedin/johndoe';
+    testCard.socialUrls.twitter = 'https://twitter/johndoe';
+    testCard.socialUrls.flickr = 'https://flickr/johndoe';
+    testCard.socialUrls.custom = 'https://custom/johndoe';
 
     var vCardString = testCard.getFormattedString();
     var lines = vCardString.split(/[\n\r]+/);

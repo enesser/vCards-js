@@ -119,6 +119,7 @@ vCard.workPhone = '312-555-1212';
 vCard.birthday = new Date('01-01-1985');
 vCard.title = 'Software Developer';
 vCard.url = 'https://github.com/enesser';
+vCard.workUrl = 'https://acme-corporation/enesser';
 vCard.note = 'Notes on Eric';
 
 //set other vitals
@@ -165,7 +166,7 @@ vCard.socialUrls['custom'] = 'https://...';
 vCard.photo.embedFromFile('photo.jpg');
 vCard.logo.embedFromFile('logo.jpg');
 
-vCard.version = '4.0'; //can also support 2.1 and 3.0, certain versions only support certain fields
+vCard.version = '3.0'; //can also support 2.1 and 4.0, certain versions only support certain fields
 
 //save to file
 vCard.saveToFile('./eric-nesser.vcf');

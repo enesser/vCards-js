@@ -239,6 +239,12 @@ var vCard = (function () {
         url: '',
 
         /**
+         * URL pointing to a website that represents the person's work in some way
+         * @type {String}
+         */
+        workUrl: '',
+
+        /**
          * Work mailing address
          * @type {object}
          */
@@ -254,7 +260,7 @@ var vCard = (function () {
          * vCard version
          * @type {String}
          */
-        version: '4.0',
+        version: '3.0',
 
         /**
          * Get major version of the vCard format

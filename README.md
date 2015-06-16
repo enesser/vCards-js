@@ -182,4 +182,4 @@ Contributions are always welcome!
 Thanks to [mplno](https://github.com/mplno), [lop-cz](https://github.com/lop-cz).
 
 ### License
-Copyright (c) 2014 Eric J Nesser MIT
+Copyright (c) 2014-2015 Eric J Nesser MIT

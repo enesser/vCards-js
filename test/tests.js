@@ -91,6 +91,12 @@ describe('vCard', function() {
             }
         });
 
+        it('should encode numeric input as strings', function(done) {
+        	testCard.workAddress.postalCode = 12345;
+            testCard.getFormattedString();
+            done();
+        });
+
         it('should end with END:VCARD', function(done) {
             assert(lines.length > 2 && lines[lines.length-2] === 'END:VCARD');
             done();

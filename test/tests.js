@@ -27,6 +27,7 @@ describe('vCard', function() {
     testCard.title = 'Crash Test Dummy';
     testCard.role = 'Crash Testing';
     testCard.email = 'john.doe@testmail';
+    testCard.workEmail = 'john.doe@workmail';
     testCard.url = 'http://johndoe';
     testCard.workUrl = 'http://acemecompany/johndoe';
 

@@ -119,10 +119,16 @@ var vCard = (function () {
         cellPhone: '',
 
         /**
-         * The address for electronic mail communication
+         * The address for private electronic mail communication
          * @type {String}
          */
         email: '',
+
+        /**
+         * The address for work-related electronic mail communication
+         * @type {String}
+         */
+        workEmail: '',
 
         /**
          * First name

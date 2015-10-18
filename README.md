@@ -133,6 +133,15 @@ vCard.role = 'Software Development';
 //set other phone numbers
 vCard.homePhone = '312-555-1313';
 vCard.cellPhone = '312-555-1414';
+vCard.pagerPhone = '312-555-1515';
+
+// set fax/ facsimile numbers
+vCard.homeFax = '312-555-1616';
+vCard.workFax = '312-555-1717';
+
+// set email addresses
+vCard.email = 'e.nesser@emailhost.tld';
+vCard.workEmail = 'e.nesser@acme-corporation.tld';
 
 //set logo of organization or personal logo (also supports embedding, see above)
 vCard.logo.attachFromUrl('https://avatars2.githubusercontent.com/u/5659221?v=3&s=460', 'JPEG');

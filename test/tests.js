@@ -22,6 +22,9 @@ describe('vCard', function() {
     testCard.workPhone = '312-555-1212';
     testCard.homePhone = '312-555-1313';
     testCard.cellPhone = '312-555-1414';
+    testCard.pagerPhone = '312-555-1515';
+    testCard.homeFax = '312-555-1616';
+    testCard.workFax = '312-555-1717';
     testCard.birthday = new Date();
     testCard.anniversary = new Date();
     testCard.title = 'Crash Test Dummy';

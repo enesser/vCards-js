@@ -119,6 +119,12 @@ var vCard = (function () {
         cellPhone: '',
 
         /**
+         * Other cell phone number or pager
+         * @type {String}
+         */
+        pagerPhone: '',
+
+        /**
          * The address for private electronic mail communication
          * @type {String}
          */
@@ -159,6 +165,12 @@ var vCard = (function () {
          * @type {String}
          */
         homePhone: '',
+
+        /**
+         * Home facsimile
+         * @type {String}
+         */
+        homeFax: '',
 
         /**
          * Last name
@@ -261,6 +273,12 @@ var vCard = (function () {
          * @type {String}
          */
         workPhone: '',
+
+        /**
+         * Work facsimile
+         * @type {String}
+         */
+        workFax: '',
 
         /**
          * vCard version

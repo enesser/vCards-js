@@ -1,13 +1,13 @@
 {
   "name": "vcards-js",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Create vCards to import contacts into Outlook, iOS, Mac OS, Android devices, and more.",
   "main": "index.js",
   "dependencies": {
     "moment": "~2.10.6"
   },
   "devDependencies": {
-    "mocha": "~2.3.2"
+    "mocha": "~2.3.3"
   },
   "scripts": {
     "test": "mocha ./test/tests"

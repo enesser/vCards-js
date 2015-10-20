@@ -188,7 +188,7 @@ console.log(vCard.getFormattedString());
 
 Contributions are always welcome!
 
-Thanks to [mplno](https://github.com/mplno), [lop-cz](https://github.com/lop-cz).
+Thanks to [mplno](https://github.com/mplno), [lop-cz](https://github.com/lop-cz), [jkrenge](https://github.com/jkrenge).
 
 ### License
 Copyright (c) 2014-2015 Eric J Nesser MIT

@@ -1,7 +1,7 @@
 {
-  "name": "vcards-js",
+  "name": "sipgate-vcards-js",
   "version": "2.3.0",
-  "description": "Create vCards to import contacts into Outlook, iOS, Mac OS, Android devices, and more.",
+  "description": "Fork of vCards-js (https://github.com/enesser/vCards-JS.git), changed to implement more closely vCards as used by Sipgate API.",
   "main": "index.js",
   "dependencies": {
     "moment": "~2.10.6"
@@ -14,17 +14,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/enesser/vCards-JS.git"
+    "url": "https://github.com/webdepp/sipgate-vCards-js"
   },
   "keywords": [
     "vCard",
     "vCards",
+    "sipgate",
     "contacts"
   ],
-  "author": "Eric J Nesser",
+  "author": "Tobias Müller",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/enesser/vCards-JS/issues"
+    "url": "https://github.com/webdepp/sipgate-vCards-js/issues"
   },
-  "homepage": "https://github.com/enesser/vCards-JS"
+  "homepage": "https://github.com/webdepp/sipgate-vCards-js"
 }

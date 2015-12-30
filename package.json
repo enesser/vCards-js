@@ -1,6 +1,6 @@
 {
   "name": "sipgate-vcards-js",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Fork of vCards-js (https://github.com/enesser/vCards-JS.git), changed to implement more closely vCards as used by Sipgate API.",
   "main": "index.js",
   "dependencies": {

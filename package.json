@@ -1,31 +1,30 @@
 {
-  "name": "sipgate-vcards-js",
-  "version": "2.3.1",
-  "description": "Fork of vCards-js (https://github.com/enesser/vCards-JS.git), changed to implement more closely vCards as used by Sipgate API.",
+  "name": "vcards-js",
+  "version": "2.4.0",
+  "description": "Fork of Eric J Nesser's vCards-js (https://github.com/enesser/vCards-JS.git), changed to implement features like multiple entries for phone, mail, et cetera.",
   "main": "index.js",
   "dependencies": {
-    "moment": "~2.10.6"
+    "moment": "~2.11.2"
   },
   "devDependencies": {
-    "mocha": "~2.3.3"
+    "mocha": "~2.4.5"
   },
   "scripts": {
     "test": "mocha ./test/tests"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/webdepp/sipgate-vCards-js"
+    "url": "https://github.com/intellikonzept/vCards-js.git"
   },
   "keywords": [
     "vCard",
     "vCards",
-    "sipgate",
     "contacts"
   ],
   "author": "Tobias Müller",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/webdepp/sipgate-vCards-js/issues"
+    "url": "https://github.com/intellikonzept/vCards-js/issues"
   },
-  "homepage": "https://github.com/webdepp/sipgate-vCards-js"
+  "homepage": "https://github.com/intellikonzept/vCards-js"
 }

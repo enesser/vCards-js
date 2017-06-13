@@ -1,6 +1,6 @@
 {
   "name": "vcards-js",
-  "version": "2.5.1",
+  "version": "2.6",
   "description": "Create vCards to import contacts into Outlook, iOS, Mac OS, Android devices, and more.",
   "main": "index.js",
   "dependencies": {
@@ -14,17 +14,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/intellikonzept/vCards-js.git"
+    "url": "https://github.com/enesser/vCards-js.git"
   },
   "keywords": [
     "vCard",
     "vCards",
     "contacts"
   ],
-  "author": "Tobias Müller",
+  "author": "Eric J Nesser",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/intellikonzept/vCards-js/issues"
+    "url": "https://github.com/enesser/vCards-JS/issues"
   },
-    "homepage": "https://github.com/intellikonzept/vCards-js"
+  "homepage": "https://github.com/enesser/vCards-JS"
 }

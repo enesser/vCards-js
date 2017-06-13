@@ -14,17 +14,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/enesser/vCards-JS.git"
+    "url": "https://github.com/intellikonzept/vCards-js.git"
   },
   "keywords": [
     "vCard",
     "vCards",
     "contacts"
   ],
-  "author": "Eric J Nesser",
+  "author": "Tobias Müller",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/enesser/vCards-JS/issues"
+    "url": "https://github.com/intellikonzept/vCards-js/issues"
   },
-  "homepage": "https://github.com/enesser/vCards-JS"
+  "homepage": "https://github.com/intellikonzept/vCards-js"
 }

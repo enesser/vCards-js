@@ -219,7 +219,7 @@ A React Native version exists here at this repository --
 
 Contributions are always welcome!
 
-Thanks to [mplno](https://github.com/mplno), [lop-cz](https://github.com/lop-cz), [jkrenge](https://github.com/jkrenge), [webdepp](https://github.com/webdepp).
+Thanks to [mplno](https://github.com/mplno), [lop-cz](https://github.com/lop-cz), [jkrenge](https://github.com/jkrenge), [webdepp](https://github.com/webdepp), [idxbroker](https://github.com/idxbroker).
 
 ### License
 Copyright (c) 2014-2017 Eric J Nesser MIT

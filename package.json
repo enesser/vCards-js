@@ -4,10 +4,10 @@
   "description": "Create vCards to import contacts into Outlook, iOS, Mac OS, Android devices, and more.",
   "main": "index.js",
   "dependencies": {
-    "moment": "~2.13.0"
+    "moment": "~2.18.1"
   },
   "devDependencies": {
-    "mocha": "~2.5.3"
+    "mocha": "~3.4.2"
   },
   "scripts": {
     "test": "mocha ./test/tests"
@@ -26,5 +26,5 @@
   "bugs": {
     "url": "https://github.com/intellikonzept/vCards-js/issues"
   },
-  "homepage": "https://github.com/intellikonzept/vCards-js"
+    "homepage": "https://github.com/intellikonzept/vCards-js"
 }

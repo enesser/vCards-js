@@ -133,11 +133,11 @@ vCard.homePhone = '312-555-1313';
 vCard.cellPhone = '312-555-1414';
 vCard.pagerPhone = '312-555-1515';
 
-// set fax/ facsimile numbers
+//set fax/facsimile numbers
 vCard.homeFax = '312-555-1616';
 vCard.workFax = '312-555-1717';
 
-// set email addresses
+//set email addresses
 vCard.email = 'e.nesser@emailhost.tld';
 vCard.workEmail = 'e.nesser@acme-corporation.tld';
 
@@ -182,11 +182,39 @@ vCard.saveToFile('./eric-nesser.vcf');
 console.log(vCard.getFormattedString());
 ```
 
+### Multiple Email, Fax, & Phone Examples
+
+`email`, `otherEmail`, `cellPhone`, `pagerPhone`, `homePhone`, `workPhone`, `homeFax`, `workFax`, `otherPhone` all support multiple entries in an array format. 
+
+Examples are provided below:
+
+```js
+var vCard = require('vcards-js');
+
+//create a new vCard
+vCard = vCard();
+
+//multiple email entry
+vCard.email = [
+    'e.nesser@emailhost.tld',
+    'e.nesser@emailhost2.tld',
+    'e.nesser@emailhost3.tld'
+];
+
+//multiple cellphone
+vCard.cellPhone = [
+    '312-555-1414',
+    '312-555-1415',
+    '312-555-1416'
+];
+
+```
+
 ### Contributions
 
 Contributions are always welcome!
 
-Thanks to [mplno](https://github.com/mplno), [lop-cz](https://github.com/lop-cz), [jkrenge](https://github.com/jkrenge).
+Thanks to [mplno](https://github.com/mplno), [lop-cz](https://github.com/lop-cz), [jkrenge](https://github.com/jkrenge), [webdepp](https://github.com/webdepp).
 
 ### License
-Copyright (c) 2014-2015 Eric J Nesser MIT
+Copyright (c) 2014-2017 Eric J Nesser MIT

@@ -8,10 +8,6 @@
  * Represents a contact that can be imported into Outlook, iOS, Mac OS, Android devices, and more
  */
 var vCard = (function () {
-
-  var fs   = require('fs');
-  var path = require('path');
-
     /**
      * Get photo object for storing photos in vCards
      */
@@ -37,9 +33,21 @@ var vCard = (function () {
              * @param  {string} filename
              */
             embedFromFile: function(fileLocation) {
+              var fs   = require('fs');
+              var path = require('path');
               this.mediaType = path.extname(fileLocation).toUpperCase().replace(/\./g, "");
               var imgData = fs.readFileSync(fileLocation);
               this.url = imgData.toString('base64');
+              this.base64 = true;
+            },
+
+            /**
+             * Embed a photo from a base-64 string
+             * @param  {string} base64String
+             */
+            embedFromString: function(base64String, mediaType) {
+              this.mediaType = mediaType;
+              this.url = base64String;
               this.base64 = true;
             }
         };

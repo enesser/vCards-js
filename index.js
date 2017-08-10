@@ -115,6 +115,12 @@ var vCard = (function () {
     return {
 
         /**
+         * Specifies a value that represents a persistent, globally unique identifier associated with the vCard
+         * @type {String}
+         */
+        uid: '',
+
+        /**
          * Date of birth
          * @type {Datetime}
          */

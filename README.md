@@ -91,6 +91,12 @@ vCard.photo.embedFromFile('/path/to/file.png');
 vCard.logo.embedFromFile('/path/to/file.png');
 ```
 
+```js
+//can also embed images via base-64 encoded strings
+vCard.photo.embedFromString('iVBORw0KGgoAAAANSUhEUgAAA2...', 'image/png');
+vCard.logo.embedFromString('iVBORw0KGgoAAAANSUhEUgAAA2...', 'image/png');
+```
+
 ### Complete Example
 
 The following shows a vCard with everything filled out.
@@ -215,11 +221,23 @@ vCard.cellPhone = [
 A React Native version exists here at this repository --
 [https://github.com/idxbroker/vCards-js/tree/react-native](https://github.com/idxbroker/vCards-js/tree/react-native)
 
+### Testing
+
+You can run the vCard unit tests via `npm`:
+
+```sh
+npm test
+```
+
 ### Contributions
 
 Contributions are always welcome!
 
-Thanks to [mplno](https://github.com/mplno), [lop-cz](https://github.com/lop-cz), [jkrenge](https://github.com/jkrenge), [webdepp](https://github.com/webdepp), [idxbroker](https://github.com/idxbroker).
+Thanks to [mplno](https://github.com/mplno), [lop-cz](https://github.com/lop-cz), [jkrenge](https://github.com/jkrenge), [webdepp](https://github.com/webdepp), [idxbroker](https://github.com/idxbroker), [c-h-](https://github.com/c-h-)
+
+## Donations
+
+BTC 18N1g2o1b9u2jNPbSpGHhV6x5xs6Qou3EV
 
 ### License
 Copyright (c) 2014-2017 Eric J Nesser MIT

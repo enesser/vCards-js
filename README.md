@@ -111,6 +111,7 @@ vCard = vCard();
 vCard.firstName = 'Eric';
 vCard.middleName = 'J';
 vCard.lastName = 'Nesser';
+vCard.uid = '69531f4a-c34d-4a1e-8922-bd38a9476a53';
 vCard.organization = 'ACME Corporation';
 
 //link to image

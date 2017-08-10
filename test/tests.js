@@ -2,13 +2,41 @@
 
 /* global require, describe, it: true */
 
-var testCard = require('../index');
-var assert = require('assert');
+const vCard = require('../index');
+const assert = require('assert');
 
+/**
+ * Test values.
+ */
+const TEST_VALUE_UID = '69531f4a-c34d-4a1e-8922-bd38a9476a53';
+
+/**
+ * Get vCard value by field name.
+ * @param  {string} fieldName
+ * @param  {Array} lines
+ * @return {string}
+ */
+let getValueByFieldName = (fieldName, lines) => {
+
+    for (let i=0; i<lines.length; i++) {
+        let line = lines[i];
+
+        if (line.indexOf(fieldName) === 0) {
+            return line.split(':')[1];
+        }
+    }
+
+    return undefined;
+};
+
+/**
+ * Test cases.
+ */
 describe('vCard', function() {
 
-    testCard = testCard();
+    let testCard = vCard();
     testCard.version = '3.0';
+    testCard.uid = TEST_VALUE_UID;
     testCard.lastName = 'Doe';
     testCard.middleName = 'D';
     testCard.firstName = 'John';
@@ -98,6 +126,11 @@ describe('vCard', function() {
         it('should encode numeric input as strings', function(done) {
         	testCard.workAddress.postalCode = 12345;
             testCard.getFormattedString();
+            done();
+        });
+
+        it(`should have UID set as test value: ${TEST_VALUE_UID}`, (done) => {            
+            assert(getValueByFieldName('UID', lines) === TEST_VALUE_UID);            
             done();
         });
 

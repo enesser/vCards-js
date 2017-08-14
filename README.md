@@ -217,12 +217,12 @@ vCard.cellPhone = [
 
 ```
 
-### React Native 
+## React Native 
 
 A React Native version exists here at this repository --
 [https://github.com/idxbroker/vCards-js/tree/react-native](https://github.com/idxbroker/vCards-js/tree/react-native)
 
-### Testing
+## Testing
 
 You can run the vCard unit tests via `npm`:
 
@@ -230,7 +230,7 @@ You can run the vCard unit tests via `npm`:
 npm test
 ```
 
-### Contributions
+## Contributions
 
 Contributions are always welcome!
 
@@ -240,5 +240,5 @@ Thanks to [mplno](https://github.com/mplno), [lop-cz](https://github.com/lop-cz)
 
 BTC 18N1g2o1b9u2jNPbSpGHhV6x5xs6Qou3EV
 
-### License
+## License
 Copyright (c) 2014-2017 Eric J Nesser MIT

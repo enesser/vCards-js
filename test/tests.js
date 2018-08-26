@@ -9,6 +9,7 @@ const assert = require('assert');
  * Test values.
  */
 const TEST_VALUE_UID = '69531f4a-c34d-4a1e-8922-bd38a9476a53';
+const TEST_FILENAME = './test/testCard.vcf';
 
 /**
  * Get vCard value by field name.
@@ -53,8 +54,8 @@ describe('vCard', function() {
     testCard.pagerPhone = '312-555-1515';
     testCard.homeFax = '312-555-1616';
     testCard.workFax = '312-555-1717';
-    testCard.birthday = new Date('01-01-2018');
-    testCard.anniversary = new Date('01-01-2018');
+    testCard.birthday = new Date('12-01-2018');
+    testCard.anniversary = new Date('12-01-2018');
     testCard.title = 'Crash Test Dummy';
     testCard.role = 'Crash Testing';
     testCard.email = 'john.doe@testmail';
@@ -129,15 +130,15 @@ describe('vCard', function() {
             done();
         });
 
-        it('should format birthday as 20180101', function(done) {
-            let birthdayValue = getValueByFieldName('BDAY', lines);            
-            assert(birthdayValue === '20180101');
+        it('should format birthday as 20181201', function(done) {
+            let birthdayValue = getValueByFieldName('BDAY', lines);                        
+            assert(birthdayValue === '20181201');
             done();
         });
 
-        it('should format anniversary as 20180101', function(done) {                    
+        it('should format anniversary as 20181201', function(done) {                    
             let anniversaryValue = getValueByFieldName('ANNIVERSARY', lines);            
-            assert(anniversaryValue === '20180101');
+            assert(anniversaryValue === '20181201');
             done();
         });
 
@@ -148,6 +149,11 @@ describe('vCard', function() {
 
         it('should end with END:VCARD', function(done) {
             assert(lines.length > 2 && lines[lines.length-2] === 'END:VCARD');
+            done();
+        });
+
+        it(`should save to ${TEST_FILENAME}`, function(done) {
+            testCard.saveToFile(TEST_FILENAME);
             done();
         });
     });

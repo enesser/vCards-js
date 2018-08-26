@@ -234,11 +234,16 @@ npm test
 
 Contributions are always welcome!
 
-Thanks to [mplno](https://github.com/mplno), [lop-cz](https://github.com/lop-cz), [jkrenge](https://github.com/jkrenge), [webdepp](https://github.com/webdepp), [idxbroker](https://github.com/idxbroker), [c-h-](https://github.com/c-h-)
+Additional thanks to --
+Tobias Müller (https://github.com/webdepp)
+Julian Krenge (https://github.com/jkrenge)
+Charlie Hulcher (https://github.com/c-h-),
+Jimmy Tsao <jimmy.tsao@gmail.com> (https://github.com/jimmytsao)
+Michael Polino (https://github.com/mplno)
 
 ## Donations
 
 BTC 18N1g2o1b9u2jNPbSpGHhV6x5xs6Qou3EV
 
 ## License
-Copyright (c) 2014-2017 Eric J Nesser MIT
+Copyright (c) 2014-2018 Eric J Nesser MIT

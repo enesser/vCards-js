@@ -3,8 +3,7 @@
   "version": "2.8.0",
   "description": "Create vCards to import contacts into Outlook, iOS, Mac OS, Android devices, and more.",
   "main": "index.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "mocha": "~3.4.2"
   },
@@ -25,5 +24,13 @@
   "bugs": {
     "url": "https://github.com/enesser/vCards-JS/issues"
   },
-  "homepage": "https://github.com/enesser/vCards-JS"
+  "homepage": "https://github.com/enesser/vCards-JS",
+  "contributors": [
+    "Eric J Nesser <enesser@gmail.com> (https://github.com/enesser)",
+    "Tobias Müller (https://github.com/webdepp)",
+    "Julian Krenge (https://github.com/jkrenge)",
+    "Charlie Hulcher (https://github.com/c-h-)",
+    "Jimmy Tsao <jimmy.tsao@gmail.com> (https://github.com/jimmytsao)",
+    "Michael Polino (https://github.com/mplno)"
+  ]
 }

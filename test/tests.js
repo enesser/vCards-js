@@ -53,8 +53,8 @@ describe('vCard', function() {
     testCard.pagerPhone = '312-555-1515';
     testCard.homeFax = '312-555-1616';
     testCard.workFax = '312-555-1717';
-    testCard.birthday = new Date();
-    testCard.anniversary = new Date();
+    testCard.birthday = new Date('01-01-2018');
+    testCard.anniversary = new Date('01-01-2018');
     testCard.title = 'Crash Test Dummy';
     testCard.role = 'Crash Testing';
     testCard.email = 'john.doe@testmail';
@@ -124,8 +124,20 @@ describe('vCard', function() {
         });
 
         it('should encode numeric input as strings', function(done) {
-        	testCard.workAddress.postalCode = 12345;
+            testCard.workAddress.postalCode = 12345;
             testCard.getFormattedString();
+            done();
+        });
+
+        it('should format birthday as 20180101', function(done) {
+            let birthdayValue = getValueByFieldName('BDAY', lines);            
+            assert(birthdayValue === '20180101');
+            done();
+        });
+
+        it('should format anniversary as 20180101', function(done) {                    
+            let anniversaryValue = getValueByFieldName('ANNIVERSARY', lines);            
+            assert(anniversaryValue === '20180101');
             done();
         });
 

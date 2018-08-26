@@ -50,7 +50,7 @@ describe('vCard', function() {
     testCard.logo.attachFromUrl('https://testurl', 'png');
     testCard.workPhone = '312-555-1212';
     testCard.homePhone = '312-555-1313';
-    testCard.cellPhone = '312-555-1414';
+    testCard.cellPhone = '12345678900';
     testCard.pagerPhone = '312-555-1515';
     testCard.homeFax = '312-555-1616';
     testCard.workFax = '312-555-1717';
@@ -139,6 +139,12 @@ describe('vCard', function() {
         it('should format anniversary as 20181201', function(done) {                    
             let anniversaryValue = getValueByFieldName('ANNIVERSARY', lines);            
             assert(anniversaryValue === '20181201');
+            done();
+        });
+
+        it('should not crash when cellPhone is a large number, using 12345678900', function(done) {                    
+            testCard.cellPhone = 12345678900;            
+            console.log(getValueByFieldName('CELL', lines));
             done();
         });
 

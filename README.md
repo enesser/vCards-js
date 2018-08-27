@@ -191,7 +191,7 @@ console.log(vCard.getFormattedString());
 
 ### Multiple Email, Fax, & Phone Examples
 
-`email`, `otherEmail`, `cellPhone`, `pagerPhone`, `homePhone`, `workPhone`, `homeFax`, `workFax`, `otherPhone` all support multiple entries in an array format. 
+`email`, `otherEmail`, `cellPhone`, `pagerPhone`, `homePhone`, `workPhone`, `homeFax`, `workFax`, `otherPhone` all support multiple entries in an array format.
 
 Examples are provided below:
 
@@ -217,7 +217,7 @@ vCard.cellPhone = [
 
 ```
 
-## React Native 
+## React Native
 
 A React Native version exists here at this repository --
 [https://github.com/idxbroker/vCards-js/tree/react-native](https://github.com/idxbroker/vCards-js/tree/react-native)
@@ -235,11 +235,11 @@ npm test
 Contributions are always welcome!
 
 Additional thanks to --
-Tobias Müller (https://github.com/webdepp)
-Julian Krenge (https://github.com/jkrenge)
-Charlie Hulcher (https://github.com/c-h-),
-Jimmy Tsao <jimmy.tsao@gmail.com> (https://github.com/jimmytsao)
-Michael Polino (https://github.com/mplno)
+* Tobias Müller ([https://github.com/webdepp](https://github.com/webdepp))
+* Julian Krenge ([https://github.com/jkrenge](https://github.com/jkrenge))
+* Charlie Hulcher ([https://github.com/c-h-](https://github.com/c-h-))
+* Jimmy Tsao ([https://github.com/jimmytsao](https://github.com/jimmytsao))
+* Michael Polino ([https://github.com/mplno](https://github.com/mplno))
 
 ## Donations
 

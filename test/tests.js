@@ -144,7 +144,6 @@ describe('vCard', function() {
 
         it('should not crash when cellPhone is a large number, using 12345678900', function(done) {                    
             testCard.cellPhone = 12345678900;            
-            console.log(getValueByFieldName('CELL', lines));
             done();
         });
 

@@ -32,7 +32,7 @@ vCard.lastName = 'Nesser';
 vCard.organization = 'ACME Corporation';
 vCard.photo.attachFromUrl('https://avatars2.githubusercontent.com/u/5659221?v=3&s=460', 'JPEG');
 vCard.workPhone = '312-555-1212';
-vCard.birthday = new Date('01-01-1985');
+vCard.birthday = new Date(1985, 0, 1);
 vCard.title = 'Software Developer';
 vCard.url = 'https://github.com/enesser';
 vCard.note = 'Notes on Eric';
@@ -121,7 +121,7 @@ vCard.photo.attachFromUrl('https://avatars2.githubusercontent.com/u/5659221?v=3&
 vCard.photo.attachFromUrl('/path/to/file.jpeg');
 
 vCard.workPhone = '312-555-1212';
-vCard.birthday = new Date('01-01-1985');
+vCard.birthday = new Date(1985, 0, 1);
 vCard.title = 'Software Developer';
 vCard.url = 'https://github.com/enesser';
 vCard.workUrl = 'https://acme-corporation/enesser';
@@ -132,7 +132,7 @@ vCard.nickname = 'Scarface';
 vCard.namePrefix = 'Mr.';
 vCard.nameSuffix = 'JR';
 vCard.gender = 'M';
-vCard.anniversary = new Date('01-01-2004');
+vCard.anniversary = new Date(2004, 0, 1);
 vCard.role = 'Software Development';
 
 //set other phone numbers

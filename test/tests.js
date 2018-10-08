@@ -54,8 +54,8 @@ describe('vCard', function() {
     testCard.pagerPhone = '312-555-1515';
     testCard.homeFax = '312-555-1616';
     testCard.workFax = '312-555-1717';
-    testCard.birthday = new Date('12-01-2018');
-    testCard.anniversary = new Date('12-01-2018');
+    testCard.birthday = new Date(2018, 11, 1);
+    testCard.anniversary = new Date(2018, 11, 1);
     testCard.title = 'Crash Test Dummy';
     testCard.role = 'Crash Testing';
     testCard.email = 'john.doe@testmail';

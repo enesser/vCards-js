@@ -63,7 +63,7 @@ router.get('/', function (req, res, next) {
     var vCardsJS = require('vcards-js');
 
     //create a new vCard
-    vCard = vCardsJS();
+    var vCard = vCardsJS();
 
     //set properties
     vCard.firstName = 'Eric';

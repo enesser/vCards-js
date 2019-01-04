@@ -1,6 +1,6 @@
 {
   "name": "vcards-js",
-  "version": "2.9.0",
+  "version": "2.10.0",
   "description": "Create vCards to import contacts into Outlook, iOS, Mac OS, Android devices, and more.",
   "main": "index.js",
   "dependencies": {},
@@ -31,6 +31,8 @@
     "Julian Krenge (https://github.com/jkrenge)",
     "Charlie Hulcher (https://github.com/c-h-)",
     "Jimmy Tsao <jimmy.tsao@gmail.com> (https://github.com/jimmytsao)",
-    "Michael Polino (https://github.com/mplno)"
+    "Michael Polino (https://github.com/mplno)",
+    "sensotix (https://github.com/sensotix)",
+    "Randy Stevens (https://github.com/RandyStevens)"
   ]
 }

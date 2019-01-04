@@ -20,10 +20,10 @@ Below is a simple example of how to create a basic vCard and how to save it to a
 ### Basic vCard
 
 ```js
-var vCard = require('vcards-js');
+var vCardsJS = require('vcards-js');
 
 //create a new vCard
-vCard = vCard();
+var vCard = vCardsJS();
 
 //set properties
 vCard.firstName = 'Eric';
@@ -60,10 +60,10 @@ module.exports = function (app) {
 
 router.get('/', function (req, res, next) {
 
-    var vCard = require('vcards-js');
+    var vCardsJS = require('vcards-js');
 
     //create a new vCard
-    vCard = vCard();
+    vCard = vCardsJS();
 
     //set properties
     vCard.firstName = 'Eric';
@@ -106,10 +106,10 @@ MDN reference on how to use the `Date` object for birthday and anniversary can b
 The following shows a vCard with everything filled out.
 
 ```js
-var vCard = require('vcards-js');
+var vCardJS = require('vcards-js');
 
 //create a new vCard
-vCard = vCard();
+var vCard = vCardsJS();
 
 //set basic properties shown before
 vCard.firstName = 'Eric';
@@ -200,10 +200,10 @@ console.log(vCard.getFormattedString());
 Examples are provided below:
 
 ```js
-var vCard = require('vcards-js');
+var vCardsJS = require('vcards-js');
 
 //create a new vCard
-vCard = vCard();
+var vCard = vCardsJS();
 
 //multiple email entry
 vCard.email = [
@@ -219,6 +219,16 @@ vCard.cellPhone = [
     '312-555-1416'
 ];
 
+```
+
+### Apple AddressBook Extensions
+
+You can mark as a contact as an organization with the following Apple AddressBook extension property:
+
+```js
+    var vCardsJS = require('vcards-js');
+    var vCard = vCardsJS();
+    vCard.isOrganization = true;
 ```
 
 ## React Native
@@ -244,10 +254,11 @@ Additional thanks to --
 * Charlie Hulcher ([https://github.com/c-h-](https://github.com/c-h-))
 * Jimmy Tsao ([https://github.com/jimmytsao](https://github.com/jimmytsao))
 * Michael Polino ([https://github.com/mplno](https://github.com/mplno))
+* Randy Stevens ([https://github.com/RandyStevens](https://github.com/RandyStevens))
 
 ## Donations
 
 BTC 18N1g2o1b9u2jNPbSpGHhV6x5xs6Qou3EV
 
 ## License
-Copyright (c) 2014-2018 Eric J Nesser MIT
+Copyright (c) 2014-2019 Eric J Nesser MIT

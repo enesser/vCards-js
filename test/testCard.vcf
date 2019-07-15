@@ -27,11 +27,11 @@ ORG;CHARSET=UTF-8:ACME Corporation
 URL;CHARSET=UTF-8:http://johndoe
 URL;type=WORK;CHARSET=UTF-8:http://acemecompany/johndoe
 NOTE;CHARSET=UTF-8:John Doe's \nnotes\;\,
-X-SOCIALPROFILE;CHARSET=UTF-8;TYPE=facebook:https://facebook/johndoe
-X-SOCIALPROFILE;CHARSET=UTF-8;TYPE=linkedIn:https://linkedin/johndoe
-X-SOCIALPROFILE;CHARSET=UTF-8;TYPE=twitter:https://twitter/johndoe
-X-SOCIALPROFILE;CHARSET=UTF-8;TYPE=flickr:https://flickr/johndoe
-X-SOCIALPROFILE;CHARSET=UTF-8;TYPE=custom:https://custom/johndoe
+X-SOCIALPROFILE;TYPE=facebook:https://facebook/johndoe
+X-SOCIALPROFILE;TYPE=linkedIn:https://linkedin/johndoe
+X-SOCIALPROFILE;TYPE=twitter:https://twitter/johndoe
+X-SOCIALPROFILE;TYPE=flickr:https://flickr/johndoe
+X-SOCIALPROFILE;TYPE=custom:https://custom/johndoe
 SOURCE;CHARSET=UTF-8:http://sourceurl
 REV:2019-01-04T20:18:50.127Z
 END:VCARD

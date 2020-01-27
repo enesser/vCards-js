@@ -127,6 +127,12 @@ var vCard = (function () {
         birthday: '',
 
         /**
+         * Anniversary
+         * @type {Datetime}
+         */
+        anniversary: '',
+        
+        /**
          * Cell phone number
          * @type {String}
          */
@@ -233,6 +239,12 @@ var vCard = (function () {
          * @type {String}
          */
         organization: '',
+
+        /**
+         * Whether or not this contact should be shown as a company
+         * @type {String}
+         */
+        isOrganization: false,        
 
         /**
          * Individual's photo

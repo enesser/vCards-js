@@ -231,6 +231,28 @@ You can mark as a contact as an organization with the following Apple AddressBoo
     vCard.isOrganization = true;
 ```
 
+### Custom url's for iOS devices
+
+You can set custom url's for iOs devices initializing the properties `vCard.iosURL` and `vCard.label` as an empty array and putting in each position of the array a url and its label respectively. As in the following example:
+
+```
+vCard.iosURL = [ ];
+vCard.label = [ ];
+
+testCard.iosURL.push('https://www.treeala.com');
+testCard.iosURL.push('https://www.twitter.com/yasmaniaco');
+testCard.iosURL.push('https://www.instagram.com/yasmanets');
+testCard.iosURL.push('https://github.com/yasmanets');
+
+testCard.label.push('Web page');
+testCard.label.push('Twitter');
+testCard.label.push('Instagram');
+testCard.label.push('Github');`
+```
+
+You will get the following result:
+![Captura de pantalla de 2020-04-05 17-50-06](https://user-images.githubusercontent.com/34303875/78503274-f2f89100-7765-11ea-8610-f96e1f4bfc36.png)
+
 ## React Native
 
 A React Native version exists here at this repository --

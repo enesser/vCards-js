@@ -24,14 +24,21 @@ ADR;CHARSET=UTF-8;TYPE=WORK:;;123 Corporate Loop\nSuite 500;Los Angeles;CA;12345
 TITLE;CHARSET=UTF-8:Crash Test Dummy
 ROLE;CHARSET=UTF-8:Crash Testing
 ORG;CHARSET=UTF-8:ACME Corporation
-URL;CHARSET=UTF-8:http://johndoe
+item1.URL;CHARSET=UTF-8:https://www.treeala.com
+item1.X-ABLABEL;CHARSET=UTF-8:Web page
+item2.URL;CHARSET=UTF-8:https://www.twitter.com/yasmaniaco
+item2.X-ABLABEL;CHARSET=UTF-8:Twitter
+item3.URL;CHARSET=UTF-8:https://www.instagram.com/yasmanets
+item3.X-ABLABEL;CHARSET=UTF-8:Instagram
+item4.URL;CHARSET=UTF-8:https://github.com/yasmanets
+item4.X-ABLABEL;CHARSET=UTF-8:Github
 URL;type=WORK;CHARSET=UTF-8:http://acemecompany/johndoe
 NOTE;CHARSET=UTF-8:John Doe's \nnotes\;\,
-X-SOCIALPROFILE;TYPE=facebook:https://facebook/johndoe
-X-SOCIALPROFILE;TYPE=linkedIn:https://linkedin/johndoe
-X-SOCIALPROFILE;TYPE=twitter:https://twitter/johndoe
-X-SOCIALPROFILE;TYPE=flickr:https://flickr/johndoe
-X-SOCIALPROFILE;TYPE=custom:https://custom/johndoe
+X-SOCIALPROFILE:TYPE=facebook:https://facebook/johndoe
+X-SOCIALPROFILE:TYPE=linkedIn:https://linkedin/johndoe
+X-SOCIALPROFILE:TYPE=twitter:https://twitter/johndoe
+X-SOCIALPROFILE:TYPE=flickr:https://flickr/johndoe
+X-SOCIALPROFILE:TYPE=custom:https://custom/johndoe
 SOURCE;CHARSET=UTF-8:http://sourceurl
-REV:2019-01-04T20:18:50.127Z
+REV:2020-04-05T15:37:26.471Z
 END:VCARD

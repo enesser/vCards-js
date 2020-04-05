@@ -235,7 +235,7 @@ You can mark as a contact as an organization with the following Apple AddressBoo
 
 You can set custom url's for iOs devices initializing the properties `vCard.iosURL` and `vCard.label` as an empty array and putting in each position of the array a url and its label respectively. As in the following example:
 
-```
+```js
 vCard.iosURL = [ ];
 vCard.label = [ ];
 

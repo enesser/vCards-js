@@ -1,5 +1,6 @@
 'use strict';
 
+// eslint-disable-next-line no-redeclare
 /* global require, describe, it: true */
 
 const vCard = require('../index');
@@ -36,6 +37,10 @@ let getValueByFieldName = (fieldName, lines) => {
 describe('vCard', function() {
 
     let testCard = vCard();
+
+    testCard.iosURL = [];
+    testCard.label = [];
+
     testCard.version = '3.0';
     testCard.uid = TEST_VALUE_UID;
     testCard.lastName = 'Doe';
@@ -60,8 +65,17 @@ describe('vCard', function() {
     testCard.role = 'Crash Testing';
     testCard.email = 'john.doe@testmail';
     testCard.workEmail = 'john.doe@workmail';
-    testCard.url = 'http://johndoe';
     testCard.workUrl = 'http://acemecompany/johndoe';
+    
+    testCard.iosURL.push('https://www.treeala.com');
+    testCard.iosURL.push('https://www.twitter.com/yasmaniaco');
+    testCard.iosURL.push('https://www.instagram.com/yasmanets');
+    testCard.iosURL.push('https://github.com/yasmanets');
+
+    testCard.label.push('Web page');
+    testCard.label.push('Twitter');
+    testCard.label.push('Instagram');
+    testCard.label.push('Github');
 
     testCard.homeAddress.label = 'Home Address';
     testCard.homeAddress.street = '123 Main Street';

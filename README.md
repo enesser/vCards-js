@@ -251,6 +251,7 @@ testCard.label.push('Github');`
 ```
 
 You will get the following result:
+
 ![Captura de pantalla de 2020-04-05 17-50-06](https://user-images.githubusercontent.com/34303875/78503274-f2f89100-7765-11ea-8610-f96e1f4bfc36.png)
 
 ## React Native

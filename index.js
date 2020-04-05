@@ -33,12 +33,12 @@ var vCard = (function () {
              * @param  {string} filename
              */
             embedFromFile: function(fileLocation) {
-              var fs   = require('fs');
-              var path = require('path');
-              this.mediaType = path.extname(fileLocation).toUpperCase().replace(/\./g, "");
-              var imgData = fs.readFileSync(fileLocation);
-              this.url = imgData.toString('base64');
-              this.base64 = true;
+                var fs = require('fs');
+                var path = require('path');
+                this.mediaType = path.extname(fileLocation).toUpperCase().replace(/\./g, "");
+                var imgData = fs.readFileSync(fileLocation);
+                this.url = imgData.toString('base64');
+                this.base64 = true;
             },
 
             /**
@@ -46,9 +46,9 @@ var vCard = (function () {
              * @param  {string} base64String
              */
             embedFromString: function(base64String, mediaType) {
-              this.mediaType = mediaType;
-              this.url = base64String;
-              this.base64 = true;
+                this.mediaType = mediaType;
+                this.url = base64String;
+                this.base64 = true;
             }
         };
     }
@@ -269,6 +269,18 @@ var vCard = (function () {
          * @type {String}
          */
         url: '',
+
+        /**
+         * URL pointing to a custom url that represents the person in some way
+         * @type {Array<String>}
+         */
+        iosURL: [],
+
+        /**
+         * URL pointing to a url custom label that represents the person in some way
+         * @type {Array<String>}
+         */
+        label: [],
 
         /**
          * URL pointing to a website that represents the person's work in some way

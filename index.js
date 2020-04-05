@@ -271,13 +271,13 @@ var vCard = (function () {
         url: '',
 
         /**
-         * URL pointing to a website that represents the person in some way
+         * URL pointing to a custom url that represents the person in some way
          * @type {Array<String>}
          */
         iosURL: [],
 
         /**
-         * URL pointing to a website that represents the person in some way
+         * URL pointing to a url custom label that represents the person in some way
          * @type {Array<String>}
          */
         label: [],

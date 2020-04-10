@@ -259,12 +259,6 @@ var vCard = (function () {
         customSocialUrls: [],
 
         /**
-         * URL pointing to a url custom label that represents the person in some way
-         * @type {Array<String>}
-         */
-        socialUrlsLabel: [],
-
-        /**
          * A URL that can be used to get the latest version of this vCard
          * @type {String}
          */

@@ -39,6 +39,8 @@ X-SOCIALPROFILE:TYPE=linkedIn:https://linkedin/johndoe
 X-SOCIALPROFILE:TYPE=twitter:https://twitter/johndoe
 X-SOCIALPROFILE:TYPE=flickr:https://flickr/johndoe
 X-SOCIALPROFILE:TYPE=custom:https://custom/johndoe
+item4.X-SOCIALPROFILE;CHARSET=UTF-8:yaser
+item4.X-ABLABEL;CHARSET=UTF-8:Github
 SOURCE;CHARSET=UTF-8:http://sourceurl
-REV:2020-04-10T16:58:32.713Z
+REV:2020-04-10T17:38:34.308Z
 END:VCARD

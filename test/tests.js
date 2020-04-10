@@ -40,6 +40,8 @@ describe('vCard', function() {
 
     testCard.iosURL = [];
     testCard.label = [];
+    testCard.customSocialUrls = [];
+    testCard.socualUrlsLabel = [];
 
     testCard.version = '3.0';
     testCard.uid = TEST_VALUE_UID;
@@ -76,6 +78,9 @@ describe('vCard', function() {
     testCard.label.push('Twitter');
     testCard.label.push('Instagram');
     testCard.label.push('Github');
+
+    testCard.customSocialUrls.push('yaser');
+    testCard.socualUrlsLabel.push('Skype');
 
     testCard.homeAddress.label = 'Home Address';
     testCard.homeAddress.street = '123 Main Street';

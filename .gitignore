@@ -31,3 +31,4 @@ node_modules
 
 # Test card from unit testing
 test/vCard.vcf
+/.idea/*

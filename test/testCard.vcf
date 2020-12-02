@@ -1,14 +1,14 @@
 BEGIN:VCARD
 VERSION:3.0
-FN;CHARSET=UTF-8:John D Doe
-N;CHARSET=UTF-8:Doe;John;D;MR;JR
-NICKNAME;CHARSET=UTF-8:Test User
+FN;CHARSET=ISO-8859-1:John D Doe
+N;CHARSET=ISO-8859-1:Doe;John;D;MR;JR
+NICKNAME;CHARSET=ISO-8859-1:Test User
 GENDER:M
-UID;CHARSET=UTF-8:69531f4a-c34d-4a1e-8922-bd38a9476a53
+UID;CHARSET=ISO-8859-1:69531f4a-c34d-4a1e-8922-bd38a9476a53
 BDAY:20181201
 ANNIVERSARY:20181201
-EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:john.doe@testmail
-EMAIL;CHARSET=UTF-8;type=WORK,INTERNET:john.doe@workmail
+EMAIL;CHARSET=ISO-8859-1;type=HOME,INTERNET:john.doe@testmail
+EMAIL;CHARSET=ISO-8859-1;type=WORK,INTERNET:john.doe@workmail
 LOGO;TYPE=png:https://testurl
 PHOTO;TYPE=png:https://testurl
 TEL;TYPE=CELL:12345678900
@@ -17,30 +17,30 @@ TEL;TYPE=HOME,VOICE:312-555-1313
 TEL;TYPE=WORK,VOICE:312-555-1212
 TEL;TYPE=HOME,FAX:312-555-1616
 TEL;TYPE=WORK,FAX:312-555-1717
-LABEL;CHARSET=UTF-8;TYPE=HOME:Home Address
-ADR;CHARSET=UTF-8;TYPE=HOME:;;123 Main Street;Chicago;IL;12345;United States of America
-LABEL;CHARSET=UTF-8;TYPE=WORK:Work Address
-ADR;CHARSET=UTF-8;TYPE=WORK:;;123 Corporate Loop\nSuite 500;Los Angeles;CA;12345;California Republic
-TITLE;CHARSET=UTF-8:Crash Test Dummy
-ROLE;CHARSET=UTF-8:Crash Testing
-ORG;CHARSET=UTF-8:ACME Corporation
-item1.URL;CHARSET=UTF-8:https://www.treeala.com
-item1.X-ABLABEL;CHARSET=UTF-8:Web page
-item2.URL;CHARSET=UTF-8:https://www.twitter.com/yasmaniaco
-item2.X-ABLABEL;CHARSET=UTF-8:Twitter
-item3.URL;CHARSET=UTF-8:https://www.instagram.com/yasmanets
-item3.X-ABLABEL;CHARSET=UTF-8:Instagram
-item4.URL;CHARSET=UTF-8:https://github.com/yasmanets
-item4.X-ABLABEL;CHARSET=UTF-8:Github
-URL;type=WORK;CHARSET=UTF-8:http://acemecompany/johndoe
-NOTE;CHARSET=UTF-8:John Doe's \nnotes\;\,
+LABEL;CHARSET=ISO-8859-1;TYPE=HOME:Home Address
+ADR;CHARSET=ISO-8859-1;TYPE=HOME:;;123 Main Street;Chicago;IL;12345;United States of America
+LABEL;CHARSET=ISO-8859-1;TYPE=WORK:Work Address
+ADR;CHARSET=ISO-8859-1;TYPE=WORK:;;123 Corporate Loop\nSuite 500;Los Angeles;CA;12345;California Republic
+TITLE;CHARSET=ISO-8859-1:Crash Test Dummy
+ROLE;CHARSET=ISO-8859-1:Crash Testing
+ORG;CHARSET=ISO-8859-1:ACME Corporation
+URL;type=WORK;CHARSET=ISO-8859-1:https://ulompi.cards
+item1.URL;CHARSET=ISO-8859-1:https://www.ulompi.com
+item1.X-ABLABEL;CHARSET=ISO-8859-1:Web page
+item2.URL;CHARSET=ISO-8859-1:https://www.twitter.com/yasmaniaco
+item2.X-ABLABEL;CHARSET=ISO-8859-1:Twitter
+item3.URL;CHARSET=ISO-8859-1:https://www.instagram.com/yasmanets
+item3.X-ABLABEL;CHARSET=ISO-8859-1:Instagram
+item4.URL;CHARSET=ISO-8859-1:https://github.com/yasmanets
+item4.X-ABLABEL;CHARSET=ISO-8859-1:Github
+NOTE;CHARSET=ISO-8859-1:John Doe's \nnotes\;\,
 X-SOCIALPROFILE:TYPE=facebook:https://facebook/johndoe
 X-SOCIALPROFILE:TYPE=linkedIn:https://linkedin/johndoe
 X-SOCIALPROFILE:TYPE=twitter:https://twitter/johndoe
 X-SOCIALPROFILE:TYPE=flickr:https://flickr/johndoe
 X-SOCIALPROFILE:TYPE=custom:https://custom/johndoe
-item4.X-SOCIALPROFILE;CHARSET=UTF-8:yaser
-item4.X-ABLABEL;CHARSET=UTF-8:Github
-SOURCE;CHARSET=UTF-8:http://sourceurl
-REV:2020-04-10T17:38:34.308Z
+item4.X-SOCIALPROFILE;CHARSET=ISO-8859-1:yaser
+item4.X-ABLABEL;CHARSET=ISO-8859-1:Github
+SOURCE;CHARSET=ISO-8859-1:http://sourceurl
+REV:2020-12-02T17:39:10.037Z
 END:VCARD

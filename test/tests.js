@@ -67,9 +67,9 @@ describe('vCard', function() {
     testCard.role = 'Crash Testing';
     testCard.email = 'john.doe@testmail';
     testCard.workEmail = 'john.doe@workmail';
-    testCard.workUrl = 'http://acemecompany/johndoe';
+    testCard.workUrl = 'https://ulompi.cards';
     
-    testCard.iosURL.push('https://www.treeala.com');
+    testCard.iosURL.push('https://www.ulompi.com');
     testCard.iosURL.push('https://www.twitter.com/yasmaniaco');
     testCard.iosURL.push('https://www.instagram.com/yasmanets');
     testCard.iosURL.push('https://github.com/yasmanets');

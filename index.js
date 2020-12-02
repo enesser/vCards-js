@@ -348,7 +348,8 @@ var vCard = (function () {
             var contents = vCardFormatter.getFormattedString(this);
 
             var fs = require('fs');
-            fs.writeFileSync(filename, contents, { encoding: 'utf8' });
+            fs.writeFileSync(filename, contents, { encoding: 'binary'});
+            //fs.writeFileSync(filename, contents, { encoding: 'utf8' });
         }
     };
 });

@@ -24,7 +24,11 @@ ADR;CHARSET=ISO-8859-1;TYPE=WORK:;;123 Corporate Loop\nSuite 500;Los Angeles;CA;
 TITLE;CHARSET=ISO-8859-1:Crash Test Dummy
 ROLE;CHARSET=ISO-8859-1:Crash Testing
 ORG;CHARSET=ISO-8859-1:ACME Corporation
-URL;type=WORK;CHARSET=ISO-8859-1:https://ulompi.cards
+URL;type=WORK;CHARSET=ISO-8859-1:https://www.ulompi.cards
+URL;CHARSET=ISO-8859-1:https://www.twitter.com/yasmaniaco
+URL;CHARSET=ISO-8859-1:https://www.facebook.com/yasmaniaco
+URL;CHARSET=ISO-8859-1:https://www.linkedin.com/in/yasmaniaco
+URL;CHARSET=ISO-8859-1:https://www.youtube.com/ulompi
 item1.URL;CHARSET=ISO-8859-1:https://www.ulompi.com
 item1.X-ABLABEL;CHARSET=ISO-8859-1:Web page
 item2.URL;CHARSET=ISO-8859-1:https://www.twitter.com/yasmaniaco
@@ -34,13 +38,8 @@ item3.X-ABLABEL;CHARSET=ISO-8859-1:Instagram
 item4.URL;CHARSET=ISO-8859-1:https://github.com/yasmanets
 item4.X-ABLABEL;CHARSET=ISO-8859-1:Github
 NOTE;CHARSET=ISO-8859-1:John Doe's \nnotes\;\,
-X-SOCIALPROFILE:TYPE=facebook:https://facebook/johndoe
-X-SOCIALPROFILE:TYPE=linkedIn:https://linkedin/johndoe
-X-SOCIALPROFILE:TYPE=twitter:https://twitter/johndoe
-X-SOCIALPROFILE:TYPE=flickr:https://flickr/johndoe
-X-SOCIALPROFILE:TYPE=custom:https://custom/johndoe
 item4.X-SOCIALPROFILE;CHARSET=ISO-8859-1:yaser
 item4.X-ABLABEL;CHARSET=ISO-8859-1:Github
 SOURCE;CHARSET=ISO-8859-1:http://sourceurl
-REV:2020-12-02T17:39:10.037Z
+REV:2021-01-16T17:17:52.246Z
 END:VCARD

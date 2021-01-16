@@ -67,7 +67,7 @@ describe('vCard', function() {
     testCard.role = 'Crash Testing';
     testCard.email = 'john.doe@testmail';
     testCard.workEmail = 'john.doe@workmail';
-    testCard.workUrl = 'https://ulompi.cards';
+    testCard.workUrl = 'https://www.ulompi.cards';
     
     testCard.iosURL.push('https://www.ulompi.com');
     testCard.iosURL.push('https://www.twitter.com/yasmaniaco');
@@ -99,11 +99,18 @@ describe('vCard', function() {
     testCard.source = 'http://sourceurl';
     testCard.note = 'John Doe\'s \nnotes;,';
 
-    testCard.socialUrls.facebook = 'https://facebook/johndoe';
-    testCard.socialUrls.linkedIn = 'https://linkedin/johndoe';
-    testCard.socialUrls.twitter = 'https://twitter/johndoe';
-    testCard.socialUrls.flickr = 'https://flickr/johndoe';
-    testCard.socialUrls.custom = 'https://custom/johndoe';
+    // testCard.socialUrls.facebook = 'https://facebook/johndoe';
+    // testCard.socialUrls.linkedIn = 'https://linkedin/johndoe';
+    // testCard.socialUrls.twitter = 'https://twitter/johndoe';
+    // testCard.socialUrls.flickr = 'https://flickr/johndoe';
+    // testCard.socialUrls.custom = 'https://custom/johndoe';
+
+    testCard.url = [];
+    testCard.url.push('https://www.twitter.com/yasmaniaco');
+    testCard.url.push('https://www.facebook.com/yasmaniaco');
+    testCard.url.push('https://www.linkedin.com/in/yasmaniaco');
+    testCard.url.push('https://www.youtube.com/ulompi');
+
 
     var vCardString = testCard.getFormattedString();
     var lines = vCardString.split(/[\n\r]+/);

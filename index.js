@@ -299,7 +299,11 @@ var vCard = (function () {
          * @type {String}
          */
         version: '3.0',
-
+ /**
+         * Home mailing address
+         * @type {object}
+         */
+        otherAddress: getMailingAddress(),
         /**
          * Get major version of the vCard format
          * @return {integer}

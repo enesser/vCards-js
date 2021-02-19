@@ -17,21 +17,20 @@ TEL;TYPE=HOME,VOICE:312-555-1313
 TEL;TYPE=WORK,VOICE:312-555-1212
 TEL;TYPE=HOME,FAX:312-555-1616
 TEL;TYPE=WORK,FAX:312-555-1717
-LABEL;CHARSET=UTF-8;TYPE=HOME:Home Address
-ADR;CHARSET=UTF-8;TYPE=HOME:;;123 Main Street;Chicago;IL;12345;United States of America
-LABEL;CHARSET=UTF-8;TYPE=WORK:Work Address
-ADR;CHARSET=UTF-8;TYPE=WORK:;;123 Corporate Loop\nSuite 500;Los Angeles;CA;12345;California Republic
+ADR;CHARSET=UTF-8;TYPE=WORK:;;;;;12345;
+LABEL;CHARSET=UTF-8;TYPE=OTHER:Other Address
+ADR;CHARSET=UTF-8;TYPE=OTHER:;;123 Corporate Loop\nSuite 500;Los Angeles;CA;54321;California Republic
 TITLE;CHARSET=UTF-8:Crash Test Dummy
 ROLE;CHARSET=UTF-8:Crash Testing
 ORG;CHARSET=UTF-8:ACME Corporation
-URL;CHARSET=UTF-8:http://johndoe
+URL;CHARSET=UTF-8;type=undefined:
 URL;type=WORK;CHARSET=UTF-8:http://acemecompany/johndoe
 NOTE;CHARSET=UTF-8:John Doe's \nnotes\;\,
-X-SOCIALPROFILE;TYPE=facebook:https://facebook/johndoe
-X-SOCIALPROFILE;TYPE=linkedIn:https://linkedin/johndoe
-X-SOCIALPROFILE;TYPE=twitter:https://twitter/johndoe
-X-SOCIALPROFILE;TYPE=flickr:https://flickr/johndoe
-X-SOCIALPROFILE;TYPE=custom:https://custom/johndoe
+IMPP:facebook:https://facebook/johndoe
+IMPP:linkedIn:https://linkedin/johndoe
+IMPP:twitter:https://twitter/johndoe
+IMPP:flickr:https://flickr/johndoe
+IMPP:custom:https://custom/johndoe
 SOURCE;CHARSET=UTF-8:http://sourceurl
-REV:2019-01-04T20:18:50.127Z
+REV:2021-02-19T09:35:52.157Z
 END:VCARD

@@ -77,6 +77,13 @@ describe('vCard', function() {
     testCard.workAddress.postalCode = '54321';
     testCard.workAddress.countryRegion = 'California Republic';
 
+    testCard.otherAddress.label = 'Other Address';
+    testCard.otherAddress.street = '123 Corporate Loop\nSuite 500';
+    testCard.otherAddress.city = 'Los Angeles';
+    testCard.otherAddress.stateProvince = 'CA';
+    testCard.otherAddress.postalCode = '54321';
+    testCard.otherAddress.countryRegion = 'California Republic';
+
     testCard.source = 'http://sourceurl';
     testCard.note = 'John Doe\'s \nnotes;,';
 

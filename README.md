@@ -159,19 +159,27 @@ vCard.logo.attachFromUrl('https://avatars2.githubusercontent.com/u/5659221?v=3&s
 vCard.source = 'http://mywebpage/myvcard.vcf';
 
 //set address information
-vCard.homeAddress.label = 'Home Address';
-vCard.homeAddress.street = '123 Main Street';
-vCard.homeAddress.city = 'Chicago';
-vCard.homeAddress.stateProvince = 'IL';
-vCard.homeAddress.postalCode = '12345';
-vCard.homeAddress.countryRegion = 'United States of America';
+vCard.homeAddress = [
+    {
+        label: 'Home Address',
+        street: '123 Main Street',
+        city: 'Chicago',
+        stateProvince: 'IL',
+        postalCode: '12345',
+        countryRegion: 'United States of America',
+    },
+];
 
-vCard.workAddress.label = 'Work Address';
-vCard.workAddress.street = '123 Corporate Loop\nSuite 500';
-vCard.workAddress.city = 'Los Angeles';
-vCard.workAddress.stateProvince = 'CA';
-vCard.workAddress.postalCode = '54321';
-vCard.workAddress.countryRegion = 'United States of America';
+vCard.workAddress = [
+    {
+        label: 'Work Address',
+        street: '123 Corporate Loop\nSuite 500',
+        city: 'Los Angeles',
+        stateProvince: 'CA',
+        postalCode: '54321',
+        countryRegion: 'United States of America',
+    }
+]
 
 //set social media URLs
 vCard.socialUrls['facebook'] = 'https://...';

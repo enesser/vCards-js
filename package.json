@@ -1,6 +1,6 @@
 {
   "name": "vcards-js",
-  "version": "2.11.1",
+  "version": "2.11.2",
   "description": "Create vCards to import contacts into Outlook, iOS, Mac OS, Android devices, and more.",
   "main": "index.js",
   "dependencies": {},

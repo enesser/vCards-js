@@ -1,5 +1,6 @@
 'use strict';
 
+// eslint-disable-next-line no-redeclare
 /* global require, describe, it: true */
 
 const vCard = require('../index');
@@ -36,6 +37,12 @@ let getValueByFieldName = (fieldName, lines) => {
 describe('vCard', function() {
 
     let testCard = vCard();
+
+    testCard.iosURL = [];
+    testCard.label = [];
+    testCard.customSocialUrls = [];
+    testCard.socualUrlsLabel = [];
+
     testCard.version = '3.0';
     testCard.uid = TEST_VALUE_UID;
     testCard.lastName = 'Doe';
@@ -60,8 +67,20 @@ describe('vCard', function() {
     testCard.role = 'Crash Testing';
     testCard.email = 'john.doe@testmail';
     testCard.workEmail = 'john.doe@workmail';
-    testCard.url = 'http://johndoe';
-    testCard.workUrl = 'http://acemecompany/johndoe';
+    testCard.workUrl = 'https://www.ulompi.cards';
+    
+    testCard.iosURL.push('https://www.ulompi.com');
+    testCard.iosURL.push('https://www.twitter.com/yasmaniaco');
+    testCard.iosURL.push('https://www.instagram.com/yasmanets');
+    testCard.iosURL.push('https://github.com/yasmanets');
+
+    testCard.label.push('Web page');
+    testCard.label.push('Twitter');
+    testCard.label.push('Instagram');
+    testCard.label.push('Github');
+
+    testCard.customSocialUrls.push('yaser');
+    testCard.socualUrlsLabel.push('Skype');
 
     testCard.homeAddress.label = 'Home Address';
     testCard.homeAddress.street = '123 Main Street';
@@ -70,21 +89,34 @@ describe('vCard', function() {
     testCard.homeAddress.postalCode = '12345';
     testCard.homeAddress.countryRegion = 'United States of America';
 
-    testCard.workAddress.label = 'Work Address';
-    testCard.workAddress.street = '123 Corporate Loop\nSuite 500';
-    testCard.workAddress.city = 'Los Angeles';
-    testCard.workAddress.stateProvince = 'CA';
-    testCard.workAddress.postalCode = '54321';
-    testCard.workAddress.countryRegion = 'California Republic';
+    testCard.workAddress = [
+        {
+            label: 'Work Address',
+            street: 'Avenida de Maisonnave, 41',
+            city: 'Alicante',
+            stateProvince: 'Alicante',
+            postalCode: '03003',
+            countryRegion: 'Spain',
+        },
+        {
+            label: 'Work Address',
+            street: '123 Corporate Loop\nSuite 500',
+            city: 'Los Angeles',
+            stateProvince: 'CA',
+            postalCode: '54321',
+            countryRegion: 'California Republic',
+        },
+    ];
 
     testCard.source = 'http://sourceurl';
     testCard.note = 'John Doe\'s \nnotes;,';
 
-    testCard.socialUrls.facebook = 'https://facebook/johndoe';
-    testCard.socialUrls.linkedIn = 'https://linkedin/johndoe';
-    testCard.socialUrls.twitter = 'https://twitter/johndoe';
-    testCard.socialUrls.flickr = 'https://flickr/johndoe';
-    testCard.socialUrls.custom = 'https://custom/johndoe';
+    testCard.url = [];
+    testCard.url.push('https://www.twitter.com/yasmaniaco');
+    testCard.url.push('https://www.facebook.com/yasmaniaco');
+    testCard.url.push('https://www.linkedin.com/in/yasmaniaco');
+    testCard.url.push('https://www.youtube.com/ulompi');
+
 
     var vCardString = testCard.getFormattedString();
     var lines = vCardString.split(/[\n\r]+/);

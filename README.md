@@ -159,19 +159,27 @@ vCard.logo.attachFromUrl('https://avatars2.githubusercontent.com/u/5659221?v=3&s
 vCard.source = 'http://mywebpage/myvcard.vcf';
 
 //set address information
-vCard.homeAddress.label = 'Home Address';
-vCard.homeAddress.street = '123 Main Street';
-vCard.homeAddress.city = 'Chicago';
-vCard.homeAddress.stateProvince = 'IL';
-vCard.homeAddress.postalCode = '12345';
-vCard.homeAddress.countryRegion = 'United States of America';
+vCard.homeAddress = [
+    {
+        label: 'Home Address',
+        street: '123 Main Street',
+        city: 'Chicago',
+        stateProvince: 'IL',
+        postalCode: '12345',
+        countryRegion: 'United States of America',
+    },
+];
 
-vCard.workAddress.label = 'Work Address';
-vCard.workAddress.street = '123 Corporate Loop\nSuite 500';
-vCard.workAddress.city = 'Los Angeles';
-vCard.workAddress.stateProvince = 'CA';
-vCard.workAddress.postalCode = '54321';
-vCard.workAddress.countryRegion = 'United States of America';
+vCard.workAddress = [
+    {
+        label: 'Work Address',
+        street: '123 Corporate Loop\nSuite 500',
+        city: 'Los Angeles',
+        stateProvince: 'CA',
+        postalCode: '54321',
+        countryRegion: 'United States of America',
+    }
+]
 
 //set social media URLs
 vCard.socialUrls['facebook'] = 'https://...';
@@ -230,6 +238,29 @@ You can mark as a contact as an organization with the following Apple AddressBoo
     var vCard = vCardsJS();
     vCard.isOrganization = true;
 ```
+
+### Custom url's for iOS devices
+
+You can set custom url's for iOs devices initializing the properties `vCard.iosURL` and `vCard.label` as an empty array and putting in each position of the array a url and its label respectively. As in the following example:
+
+```js
+vCard.iosURL = [ ];
+vCard.label = [ ];
+
+testCard.iosURL.push('https://www.treeala.com');
+testCard.iosURL.push('https://www.twitter.com/yasmaniaco');
+testCard.iosURL.push('https://www.instagram.com/yasmanets');
+testCard.iosURL.push('https://github.com/yasmanets');
+
+testCard.label.push('Web page');
+testCard.label.push('Twitter');
+testCard.label.push('Instagram');
+testCard.label.push('Github');`
+```
+
+You will get the following result:
+
+![Captura de pantalla de 2020-04-05 17-50-06](https://user-images.githubusercontent.com/34303875/78503274-f2f89100-7765-11ea-8610-f96e1f4bfc36.png)
 
 ## React Native
 

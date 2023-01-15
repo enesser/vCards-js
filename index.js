@@ -33,12 +33,12 @@ var vCard = (function () {
              * @param  {string} filename
              */
             embedFromFile: function(fileLocation) {
-              var fs   = require('fs');
-              var path = require('path');
-              this.mediaType = path.extname(fileLocation).toUpperCase().replace(/\./g, "");
-              var imgData = fs.readFileSync(fileLocation);
-              this.url = imgData.toString('base64');
-              this.base64 = true;
+                var fs = require('fs');
+                var path = require('path');
+                this.mediaType = path.extname(fileLocation).toUpperCase().replace(/\./g, "");
+                var imgData = fs.readFileSync(fileLocation);
+                this.url = imgData.toString('base64');
+                this.base64 = true;
             },
 
             /**
@@ -46,9 +46,9 @@ var vCard = (function () {
              * @param  {string} base64String
              */
             embedFromString: function(base64String, mediaType) {
-              this.mediaType = mediaType;
-              this.url = base64String;
-              this.base64 = true;
+                this.mediaType = mediaType;
+                this.url = base64String;
+                this.base64 = true;
             }
         };
     }
@@ -253,6 +253,12 @@ var vCard = (function () {
         socialUrls: getSocialUrls(),
 
         /**
+         * Custom social URLs attached to the vCard object (ex: Facebook, Twitter, LinkedIn)
+         * @type {Array<String>}
+         */
+        customSocialUrls: [],
+
+        /**
          * A URL that can be used to get the latest version of this vCard
          * @type {String}
          */
@@ -269,6 +275,18 @@ var vCard = (function () {
          * @type {String}
          */
         url: '',
+
+        /**
+         * URL pointing to a custom url that represents the person in some way
+         * @type {Array<String>}
+         */
+        iosURL: [],
+
+        /**
+         * URL pointing to a url custom label that represents the person in some way
+         * @type {Array<String>}
+         */
+        label: [],
 
         /**
          * URL pointing to a website that represents the person's work in some way
@@ -330,7 +348,8 @@ var vCard = (function () {
             var contents = vCardFormatter.getFormattedString(this);
 
             var fs = require('fs');
-            fs.writeFileSync(filename, contents, { encoding: 'utf8' });
+            fs.writeFileSync(filename, contents, { encoding: 'binary'});
+            //fs.writeFileSync(filename, contents, { encoding: 'utf8' });
         }
     };
 });

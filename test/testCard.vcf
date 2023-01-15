@@ -1,14 +1,14 @@
 BEGIN:VCARD
 VERSION:3.0
-FN;CHARSET=ISO-8859-1:John D Doe
-N;CHARSET=ISO-8859-1:Doe;John;D;MR;JR
-NICKNAME;CHARSET=ISO-8859-1:Test User
+FN:John D Doe
+N:Doe;John;D;MR;JR
+NICKNAME:Test User
 GENDER:M
-UID;CHARSET=ISO-8859-1:69531f4a-c34d-4a1e-8922-bd38a9476a53
+UID:69531f4a-c34d-4a1e-8922-bd38a9476a53
 BDAY:20181201
 ANNIVERSARY:20181201
-EMAIL;CHARSET=ISO-8859-1;type=HOME,INTERNET:john.doe@testmail
-EMAIL;CHARSET=ISO-8859-1;type=WORK,INTERNET:john.doe@workmail
+EMAIL;type=HOME,INTERNET:john.doe@testmail
+EMAIL;type=WORK,INTERNET:john.doe@workmail
 LOGO;TYPE=png:https://testurl
 PHOTO;TYPE=png:https://testurl
 TEL;TYPE=CELL:12345678900
@@ -17,29 +17,31 @@ TEL;TYPE=HOME,VOICE:312-555-1313
 TEL;TYPE=WORK,VOICE:312-555-1212
 TEL;TYPE=HOME,FAX:312-555-1616
 TEL;TYPE=WORK,FAX:312-555-1717
-LABEL;CHARSET=ISO-8859-1;TYPE=HOME:Home Address
-ADR;CHARSET=ISO-8859-1;TYPE=HOME:;;123 Main Street;Chicago;IL;12345;United States of America
-LABEL;CHARSET=ISO-8859-1;TYPE=WORK:Work Address
-ADR;CHARSET=ISO-8859-1;TYPE=WORK:;;123 Corporate Loop\nSuite 500;Los Angeles;CA;12345;California Republic
-TITLE;CHARSET=ISO-8859-1:Crash Test Dummy
-ROLE;CHARSET=ISO-8859-1:Crash Testing
-ORG;CHARSET=ISO-8859-1:ACME Corporation
-URL;type=WORK;CHARSET=ISO-8859-1:https://www.ulompi.cards
-URL;CHARSET=ISO-8859-1:https://www.twitter.com/yasmaniaco
-URL;CHARSET=ISO-8859-1:https://www.facebook.com/yasmaniaco
-URL;CHARSET=ISO-8859-1:https://www.linkedin.com/in/yasmaniaco
-URL;CHARSET=ISO-8859-1:https://www.youtube.com/ulompi
-item1.URL;CHARSET=ISO-8859-1:https://www.ulompi.com
-item1.X-ABLABEL;CHARSET=ISO-8859-1:Web page
-item2.URL;CHARSET=ISO-8859-1:https://www.twitter.com/yasmaniaco
-item2.X-ABLABEL;CHARSET=ISO-8859-1:Twitter
-item3.URL;CHARSET=ISO-8859-1:https://www.instagram.com/yasmanets
-item3.X-ABLABEL;CHARSET=ISO-8859-1:Instagram
-item4.URL;CHARSET=ISO-8859-1:https://github.com/yasmanets
-item4.X-ABLABEL;CHARSET=ISO-8859-1:Github
-NOTE;CHARSET=ISO-8859-1:John Doe's \nnotes\;\,
-item4.X-SOCIALPROFILE;CHARSET=ISO-8859-1:yaser
-item4.X-ABLABEL;CHARSET=ISO-8859-1:Github
-SOURCE;CHARSET=ISO-8859-1:http://sourceurl
-REV:2021-01-16T17:17:52.246Z
+LABEL;TYPE=HOME:Home Address
+ADR;TYPE=HOME:;;123 Main Street;Chicago;IL;12345;United States of America
+LABEL;TYPE=WORK:Work Address
+ADR;TYPE=WORK:;;Avenida de Maisonnave\, 41;Alicante;Alicante;03003;Spain
+LABEL;TYPE=WORK:Work Address
+ADR;TYPE=WORK:;;123 Corporate Loop\nSuite 500;Los Angeles;CA;54321;California Republic
+TITLE:Crash Test Dummy
+ROLE:Crash Testing
+ORG:ACME Corporation
+URL;type=WORK:https://www.ulompi.cards
+URL:https://www.twitter.com/yasmaniaco
+URL:https://www.facebook.com/yasmaniaco
+URL:https://www.linkedin.com/in/yasmaniaco
+URL:https://www.youtube.com/ulompi
+item1.URL:https://www.ulompi.com
+item1.X-ABLABEL:Web page
+item2.URL:https://www.twitter.com/yasmaniaco
+item2.X-ABLABEL:Twitter
+item3.URL:https://www.instagram.com/yasmanets
+item3.X-ABLABEL:Instagram
+item4.URL:https://github.com/yasmanets
+item4.X-ABLABEL:Github
+NOTE:John Doe's \nnotes\;\,
+item4.X-SOCIALPROFILE:yaser
+item4.X-ABLABEL:Github
+SOURCE:http://sourceurl
+REV:2023-01-15T11:44:56.912Z
 END:VCARD

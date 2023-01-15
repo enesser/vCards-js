@@ -89,21 +89,27 @@ describe('vCard', function() {
     testCard.homeAddress.postalCode = '12345';
     testCard.homeAddress.countryRegion = 'United States of America';
 
-    testCard.workAddress.label = 'Work Address';
-    testCard.workAddress.street = '123 Corporate Loop\nSuite 500';
-    testCard.workAddress.city = 'Los Angeles';
-    testCard.workAddress.stateProvince = 'CA';
-    testCard.workAddress.postalCode = '54321';
-    testCard.workAddress.countryRegion = 'California Republic';
+    testCard.workAddress = [
+        {
+            label: 'Work Address',
+            street: 'Avenida de Maisonnave, 41',
+            city: 'Alicante',
+            stateProvince: 'Alicante',
+            postalCode: '03003',
+            countryRegion: 'Spain',
+        },
+        {
+            label: 'Work Address',
+            street: '123 Corporate Loop\nSuite 500',
+            city: 'Los Angeles',
+            stateProvince: 'CA',
+            postalCode: '54321',
+            countryRegion: 'California Republic',
+        },
+    ];
 
     testCard.source = 'http://sourceurl';
     testCard.note = 'John Doe\'s \nnotes;,';
-
-    // testCard.socialUrls.facebook = 'https://facebook/johndoe';
-    // testCard.socialUrls.linkedIn = 'https://linkedin/johndoe';
-    // testCard.socialUrls.twitter = 'https://twitter/johndoe';
-    // testCard.socialUrls.flickr = 'https://flickr/johndoe';
-    // testCard.socialUrls.custom = 'https://custom/johndoe';
 
     testCard.url = [];
     testCard.url.push('https://www.twitter.com/yasmaniaco');

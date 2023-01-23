@@ -52,6 +52,12 @@ describe('vCard', function() {
     testCard.homePhone = '312-555-1313';
     testCard.cellPhone = '12345678900';
     testCard.pagerPhone = '312-555-1515';
+    testCard.customPhones = [
+        [{'type': 'Father', 'phone': '12345678901'}],
+        [{'type': 'Mother', 'phone': '12345678902'}],
+        [{'type': 'Sister', 'phone': '12345678903'}],
+        [{'type': 'Friend', 'phone': '12345678904'}]
+    ];
     testCard.homeFax = '312-555-1616';
     testCard.workFax = '312-555-1717';
     testCard.birthday = new Date(2018, 11, 1);
@@ -60,8 +66,20 @@ describe('vCard', function() {
     testCard.role = 'Crash Testing';
     testCard.email = 'john.doe@testmail';
     testCard.workEmail = 'john.doe@workmail';
+    testCard.customEmails = [
+        [{'type': 'Father', 'email': 'john@father.email'}],
+        [{'type': 'Mother', 'email': 'john@mother.email'}],
+        [{'type': 'Sister', 'email': 'john@sister.email'}],
+        [{'type': 'Friend', 'email': 'john@friend.email'}]
+    ];
     testCard.url = 'http://johndoe';
     testCard.workUrl = 'http://acemecompany/johndoe';
+    testCard.customUrls = [
+        [{'type': 'Father', 'web': 'http://john.doe/father'}],
+        [{'type': 'Mother', 'web': 'http://john.doe/mother'}],
+        [{'type': 'Sister', 'web': 'http://john.doe/sister'}],
+        [{'type': 'Friend', 'web': 'http://john.doe/friend'}]
+    ];
 
     testCard.homeAddress.label = 'Home Address';
     testCard.homeAddress.street = '123 Main Street';

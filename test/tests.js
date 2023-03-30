@@ -95,6 +95,35 @@ describe('vCard', function() {
     testCard.workAddress.postalCode = '54321';
     testCard.workAddress.countryRegion = 'California Republic';
 
+    testCard.customAddresses = [
+        [
+            {
+                'type': 'House', 
+                'address': {
+                    'label': 'Home Address',
+                    'street': '123 Main Street',
+                    'city': 'Chicago',
+                    'stateProvince': 'IL',
+                    'postal': '12345',
+                    'countryRegion': 'United States of America'
+                }
+            },
+        ],
+        [
+            {
+                'type': 'Job', 
+                'address': {
+                    'label': 'Work Address',
+                    'street': '123 Corporate Loop\nSuite 500',
+                    'city': 'Los Angeles',
+                    'stateProvince': 'CA',
+                    'postal': '54321',
+                    'countryRegion': 'California Republic'
+                }
+            }
+        ],
+    ];
+
     testCard.source = 'http://sourceurl';
     testCard.note = 'John Doe\'s \nnotes;,';
 

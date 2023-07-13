@@ -1,7 +1,7 @@
 vCards JS
 =====
 
-[![Build Status](https://travis-ci.org/enesser/vCards-js.svg?branch=master)](https://travis-ci.org/enesser/vCards-js.svg?branch=master)
+[![Node.js CI](https://github.com/IdkwhatImD0ing/vCards-js-updated/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/IdkwhatImD0ing/vCards-js-updated/actions/workflows/node.js.yml)
 
 Create vCards to import contacts into Outlook, iOS, Mac OS, and Android devices from your website or application.
 

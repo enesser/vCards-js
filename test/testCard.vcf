@@ -9,10 +9,18 @@ BDAY:20181201
 ANNIVERSARY:20181201
 EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:john.doe@testmail
 EMAIL;CHARSET=UTF-8;type=WORK,INTERNET:john.doe@workmail
+EMAIL;CHARSET=UTF-8;type=X-Father:john@father.email
+EMAIL;CHARSET=UTF-8;type=X-Mother:john@mother.email
+EMAIL;CHARSET=UTF-8;type=X-Sister:john@sister.email
+EMAIL;CHARSET=UTF-8;type=X-Friend:john@friend.email
 LOGO;TYPE=png:https://testurl
 PHOTO;TYPE=png:https://testurl
 TEL;TYPE=CELL:12345678900
 TEL;TYPE=PAGER:312-555-1515
+TEL;TYPE=X-Father:12345678901
+TEL;TYPE=X-Mother:12345678902
+TEL;TYPE=X-Sister:12345678903
+TEL;TYPE=X-Friend:12345678904
 TEL;TYPE=HOME,VOICE:312-555-1313
 TEL;TYPE=WORK,VOICE:312-555-1212
 TEL;TYPE=HOME,FAX:312-555-1616
@@ -25,6 +33,10 @@ TITLE;CHARSET=UTF-8:Crash Test Dummy
 ROLE;CHARSET=UTF-8:Crash Testing
 ORG;CHARSET=UTF-8:ACME Corporation
 URL;CHARSET=UTF-8:http://johndoe
+URL;TYPE=X-Father;CHARSET=UTF-8:http://john.doe/father
+URL;TYPE=X-Mother;CHARSET=UTF-8:http://john.doe/mother
+URL;TYPE=X-Sister;CHARSET=UTF-8:http://john.doe/sister
+URL;TYPE=X-Friend;CHARSET=UTF-8:http://john.doe/friend
 URL;type=WORK;CHARSET=UTF-8:http://acemecompany/johndoe
 NOTE;CHARSET=UTF-8:John Doe's \nnotes\;\,
 X-SOCIALPROFILE;TYPE=facebook:https://facebook/johndoe
@@ -33,5 +45,5 @@ X-SOCIALPROFILE;TYPE=twitter:https://twitter/johndoe
 X-SOCIALPROFILE;TYPE=flickr:https://flickr/johndoe
 X-SOCIALPROFILE;TYPE=custom:https://custom/johndoe
 SOURCE;CHARSET=UTF-8:http://sourceurl
-REV:2019-01-04T20:18:50.127Z
+REV:2023-01-23T14:02:09.232Z
 END:VCARD

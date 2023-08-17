@@ -212,11 +212,25 @@ vCard.email = [
     'e.nesser@emailhost3.tld'
 ];
 
+//multiple custom labelled email entry
+vCard.customEmails = [
+    ['type' => 'Friend', 'email' => 'e.nesser@emailhost.tld'],
+    ['type' => 'Father', 'email' => 'e.nesser@emailhost2.tld'],
+    ['type' => 'Mother', 'email' => 'e.nesser@emailhost3.tld']
+];
+
 //multiple cellphone
 vCard.cellPhone = [
     '312-555-1414',
     '312-555-1415',
     '312-555-1416'
+];
+
+//multiple custom labelled phone entry
+vCard.customPhones = [
+    ['type' => 'Friend', 'phone' => '312-555-1417'],
+    ['type' => 'Father', 'phone' => '312-555-1418'],
+    ['type' => 'Mother', 'phone' => '312-555-1419']
 ];
 
 ```

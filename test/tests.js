@@ -130,15 +130,15 @@ describe('vCard', function() {
             done();
         });
 
-        it('should format birthday as 20181201', function(done) {
+        it('should format birthday as 2018-12-01', function(done) {
             let birthdayValue = getValueByFieldName('BDAY', lines);                        
-            assert(birthdayValue === '20181201');
+            assert(birthdayValue === '2018-12-01');
             done();
         });
 
-        it('should format anniversary as 20181201', function(done) {                    
+        it('should format anniversary as 2018-12-01', function(done) {
             let anniversaryValue = getValueByFieldName('ANNIVERSARY', lines);            
-            assert(anniversaryValue === '20181201');
+            assert(anniversaryValue === '2018-12-01');
             done();
         });
 

@@ -29,13 +29,13 @@ var vCard = (function () {
             },
 
             /**
-             * Embed a photo from a file using base-64 encoding (not implemented yet)
+             * Embed a photo from a file using base-64 encoding
              * @param  {string} filename
              */
             embedFromFile: function(fileLocation) {
               var fs   = require('fs');
               var path = require('path');
-              this.mediaType = path.extname(fileLocation).toUpperCase().replace(/\./g, "");
+              this.mediaType = path.extname(fileLocation).replace(/\./g, "");
               var imgData = fs.readFileSync(fileLocation);
               this.url = imgData.toString('base64');
               this.base64 = true;
@@ -121,10 +121,16 @@ var vCard = (function () {
         uid: '',
 
         /**
-         * Date of birth
-         * @type {Datetime}
+         * Date of anniversary (v4+ only).
+         * @type {Date | undefined}
          */
-        birthday: '',
+        anniversary: undefined,
+
+        /**
+         * Date of birth
+         * @type {Date | undefined}
+         */
+        birthday: undefined,
 
         /**
          * Cell phone number
@@ -163,10 +169,10 @@ var vCard = (function () {
         formattedName: '',
 
         /**
-         * Gender.
-         * @type {String} Must be M or F for Male or Female
+         * Gender (v4+ only).
+         * @type {"M" | "F" | "O" | "N" | "U" | undefined} (M)ale, (F)emale, (O)ther, (N)ot applicable, (U)nknown
          */
-        gender: '',
+        gender: undefined,
 
         /**
          * Home mailing address
@@ -217,10 +223,10 @@ var vCard = (function () {
         nameSuffix: '',
 
         /**
-         * Nickname of individual
-         * @type {String}
+         * Nickname of individual (v3+ only).
+         * @type {String | undefined}
          */
-        nickname: '',
+        nickname: undefined,
 
         /**
          * Specifies supplemental information or a comment that is associated with the vCard

@@ -4,6 +4,11 @@
 	"description": "Create vCards to import contacts into Outlook, iOS, Mac OS, Android devices, and more.",
 	"main": "index.js",
 	"types": "vcard-js.d.ts",
+	"files": [
+		"index.js",
+		"lib/",
+		"vcard-js.d.ts"
+	],
 	"dependencies": {},
 	"devDependencies": {
 		"mocha": "~11.7.6"

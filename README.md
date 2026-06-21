@@ -97,6 +97,13 @@ vCard.photo.embedFromString('iVBORw0KGgoAAAANSUhEUgAAA2...', 'image/png');
 vCard.logo.embedFromString('iVBORw0KGgoAAAANSUhEUgAAA2...', 'image/png');
 ```
 
+> **Note on Samsung devices and embedded images:** Some Samsung devices fail to
+> import a vCard that contains an embedded (base64) image unless the image value
+> is followed by a blank line. That blank line is part of the vCard **2.1**
+> specification but is *not* permitted by the 3.0 (RFC 2426) and 4.0 (RFC 6350)
+> grammars, so vcards-js only emits it for 2.1. If you embed images and need
+> them to import on those devices, set `vCard.version = '2.1'`.
+
 ### Date Reference
 
 MDN reference on how to use the `Date` object for birthday and anniversary can be found at [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date).

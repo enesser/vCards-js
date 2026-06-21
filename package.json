@@ -9,7 +9,7 @@
 		"mocha": "~11.1.0"
 	},
 	"scripts": {
-		"test": "mocha ./test/tests"
+		"test": "mocha ./test/tests && node ./test/rfc-check.js"
 	},
 	"browser": {
 		"fs": false,

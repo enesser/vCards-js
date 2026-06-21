@@ -247,14 +247,11 @@ describe("vCard", function()
 			done();
 		});
 
-		it("should terminate an embedded base64 photo with a blank line (issue #58)", function(done)
+		it("should NOT contain blank lines (RFC 2426 grammar forbids them)", function(done)
 		{
-			// Samsung devices refuse to import the vCard unless the inline binary
-			//   value is followed by an empty line.
-			const photoIndex = v3String.indexOf("PHOTO;ENCODING=b");
-			assert.ok(photoIndex !== -1, "Expected an inline base64 PHOTO");
-			const afterPhoto = v3String.slice(photoIndex);
-			assert.ok(/\r\n\r\n/.test(afterPhoto), "Expected a blank line after the base64 PHOTO value");
+			// The base64 blank-line terminator is a vCard 2.1 construct; emitting it
+			//   in 3.0 would violate the RFC. See issue #58.
+			assert.ok(v3String.indexOf("\r\n\r\n") === -1, "Found a blank line in a 3.0 vCard");
 			done();
 		});
 
@@ -323,6 +320,15 @@ describe("vCard", function()
 		const v2_1Lines = splitVcardStringIntoOrderedContentLines(v2_1String);
 
 		// we don´t do primitives check of v3 again
+
+		it("should terminate an embedded base64 photo with a blank line (issue #58)", function(done)
+		{
+			// vCard 2.1 requires inline base64 values to be terminated by a blank line.
+			const photoIndex = v2_1String.indexOf("PHOTO;ENCODING=b");
+			assert.ok(photoIndex !== -1, "Expected an inline base64 PHOTO");
+			assert.ok(/\r\n\r\n/.test(v2_1String.slice(photoIndex)), "Expected a blank line after the base64 PHOTO value");
+			done();
+		});
 
 		it(`should match a working vCard`, function(done)
 		{

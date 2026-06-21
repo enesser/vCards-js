@@ -6,7 +6,11 @@
 	"types": "vcard-js.d.ts",
 	"dependencies": {},
 	"devDependencies": {
-		"mocha": "~11.1.0"
+		"mocha": "~11.7.6"
+	},
+	"overrides": {
+		"serialize-javascript": "^7.0.6",
+		"diff": "^9.0.0"
 	},
 	"scripts": {
 		"test": "mocha ./test/tests && node ./test/rfc-check.js"

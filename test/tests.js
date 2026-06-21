@@ -247,6 +247,25 @@ describe("vCard", function()
 			done();
 		});
 
+		it("should terminate an embedded base64 photo with a blank line (issue #58)", function(done)
+		{
+			// Samsung devices refuse to import the vCard unless the inline binary
+			//   value is followed by an empty line.
+			const photoIndex = v3String.indexOf("PHOTO;ENCODING=b");
+			assert.ok(photoIndex !== -1, "Expected an inline base64 PHOTO");
+			const afterPhoto = v3String.slice(photoIndex);
+			assert.ok(/\r\n\r\n/.test(afterPhoto), "Expected a blank line after the base64 PHOTO value");
+			done();
+		});
+
+		it("should declare VALUE=uri for a URL-referenced photo (issue #41)", function(done)
+		{
+			const logoLine = getPropertyLines("LOGO", v3Lines)[0];
+			assert.ok(logoLine, "Expected a LOGO line");
+			assert.ok(logoLine.indexOf("VALUE=uri") !== -1, "URL photo must declare VALUE=uri: " + logoLine);
+			done();
+		});
+
 		it(`should match a working vCard`, function(done)
 		{
 			// REV always is generated with current date

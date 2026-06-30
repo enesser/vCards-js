@@ -221,6 +221,22 @@ describe("vCard", function()
 			done();
 		});
 
+		it("should escape the semicolon in the compound ORG value (RFC 6350 6.6.4)", function(done)
+		{
+			// ORG is a compound property whose components are delimited by ";",
+			//   just like N and ADR. A semicolon inside an organization name is data
+			//   and must be escaped so it is not read as a component separator.
+			const orgCard = vCard();
+			orgCard.version = "3.0";
+			orgCard.organization = "ACME; Inc.";
+			const orgLines = splitVcardStringIntoOrderedContentLines(orgCard.getFormattedString());
+			const orgValue = getValueByFieldName("ORG", orgLines);
+
+			assert.ok(orgValue.indexOf("\\;") !== -1, "Expected an escaped semicolon in ORG: " + orgValue);
+			assert.ok(!/(?:^|[^\\]);/.test(orgValue), "Found an unescaped semicolon in ORG: " + orgValue);
+			done();
+		});
+
 		it("should format birthday as 2018-12-01 (ISO-8601 4.1.2.2 extended date format)", function(done)
 		{
 			const birthdayValue = getValueByFieldName("BDAY", v3Lines);
